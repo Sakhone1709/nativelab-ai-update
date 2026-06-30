@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "NativeLab AI | บริษัทระบบ AI ไฮเทค",
+    "description": "NativeLab AI ออกแบบและติดตั้งระบบ AI ส่วนตัว ระบบความรู้องค์กร เวิร์กโฟลว์เอเจนต์ และระบบประเมินโมเดลสำหรับบริษัทสมัยใหม่"
+  },
+  "Navigation": {
+    "language": "เปลี่ยนภาษา"
+  },
+  "Home": {
+    "nav": {
+      "home": "หน้าแรก",
+      "company": "บริษัท",
+      "profile": "บริษัท",
+      "capabilities": "ความสามารถ",
+      "technology": "เทคโนโลยี",
+      "caseStudies": "ผลงาน",
+      "sectors": "อุตสาหกรรม",
+      "method": "วิธีทำงาน",
+      "contact": "ติดต่อ"
+    },
+    "hero": {
+      "kicker": "AI systems studio",
+      "title": "NativeLab AI",
+      "subtitle": "เราออกแบบและติดตั้งระบบ AI ส่วนตัวสำหรับทีมที่ต้องการระบบอัตโนมัติ การค้นหา และการช่วยตัดสินใจในงานจริงขององค์กร",
+      "primaryCta": "ดูความสามารถ",
+      "secondaryCta": "โปรไฟล์บริษัท",
+      "panelLabel": "โหมดการทำงานปัจจุบัน",
+      "panelStatus": "กำลังออกแบบระบบ AI สำหรับโปรดักชัน"
+    },
+    "stats": [
+      { "value": "VPC / On-prem", "label": "รูปแบบติดตั้งสำหรับข้อมูลองค์กรที่ละเอียดอ่อน" },
+      { "value": "4-8 สัปดาห์", "label": "ช่วงเวลาต้นแบบก่อนวางแผนโปรดักชัน" },
+      { "value": "Eval-first", "label": "เกณฑ์คุณภาพสำหรับ retrieval, reasoning และ safety" }
+    ],
+    "about": {
+      "kicker": "โปรไฟล์บริษัท",
+      "title": "บริษัท AI ไฮเทคที่สร้างระบบองค์กรให้ใช้งานได้จริง",
+      "body": "NativeLab AI โฟกัสส่วนของ AI ที่ต้องทำงานได้หลังจบเดโม: ชั้น retrieval, เวิร์กโฟลว์เอเจนต์, การประเมินโมเดล, การติดตั้งที่ปลอดภัย และประสบการณ์ผู้ปฏิบัติงาน เราทำงานใกล้ชิดกับทีมธุรกิจและทีมวิศวกรรม เพื่อให้ระบบสุดท้ายรู้สึกเป็นส่วนหนึ่งขององค์กร ไม่ใช่เดโมที่นำมาวางทับ"
+    },
+    "features": {
+      "kicker": "ความสามารถ",
+      "title": "โครงสร้างพื้นฐาน AI สำหรับเวิร์กโฟลว์จริง",
+      "items": [
+        {
+          "title": "Enterprise knowledge engines",
+          "description": "ระบบ RAG ส่วนตัวที่เชื่อมโยงนโยบาย เอกสาร ticket ฐานข้อมูล และความรู้ของทีม พร้อมคำตอบที่ตรวจสอบแหล่งอ้างอิงได้"
+        },
+        {
+          "title": "Agentic operations",
+          "description": "เอเจนต์ AI ที่วางแผน เรียกใช้เครื่องมือ เตรียมงาน และส่งต่อให้คนอนุมัติในจุดที่เหมาะสม"
+        },
+        {
+          "title": "Model customization",
+          "description": "การปรับโมเดลให้เข้ากับโดเมน ระบบพรอมป์ กลยุทธ์ fine-tuning และชุดข้อมูลประเมินสำหรับทีมเฉพาะทาง"
+        },
+        {
+          "title": "Multimodal intelligence",
+          "description": "ระบบ vision, document, audio และ workflow สำหรับบริษัทที่มีข้อมูลปฏิบัติการซับซ้อน"
+        }
+      ]
+    },
+    "why": {
+      "kicker": "หลักการทำงาน",
+      "title": "ออกแบบเพื่อการควบคุม ความเร็ว และความน่าเชื่อถือ",
+      "body": "งานของเราเป็นเทคโนโลยีขั้นสูง แต่ผลิตภัณฑ์ต้องเข้าใจได้ ทุกระบบถูกออกแบบให้มีเจ้าของชัดเจน วัดผลได้ และมีเส้นทางจากต้นแบบสู่โปรดักชัน",
+      "items": [
+        {
+          "label": "Private by default",
+          "text": "สถาปัตยกรรมสามารถทำงานใน VPC, private cloud หรือ on-premise ที่ควบคุมได้เมื่อธรรมาภิบาลข้อมูลเป็นเรื่องสำคัญ"
+        },
+        {
+          "label": "Evaluation before scale",
+          "text": "เรากำหนดชุดทดสอบ โหมดความล้มเหลว guardrails และเส้นทาง human review ก่อนขยายการใช้งาน"
+        },
+        {
+          "label": "Human-in-the-loop",
+          "text": "ผู้ปฏิบัติงานยังควบคุมการอนุมัติ ข้อยกเว้น และการตัดสินใจที่สำคัญต่อธุรกิจ"
+        }
+      ]
+    },
+    "useCases": {
+      "kicker": "อุตสาหกรรม",
+      "title": "เวิร์กโฟลว์มูลค่าสูงสำหรับทีม AI-native",
+      "items": [
+        {
+          "title": "การเงินและ compliance",
+          "description": "ผู้ช่วยวิจัย การค้นหานโยบาย เวิร์กโฟลว์ตรวจทาน การคัดกรองความผิดปกติ และการสร้างรายงานแบบควบคุม"
+        },
+        {
+          "title": "สุขภาพและงานวิจัย",
+          "description": "Document intelligence การสนับสนุนงานปฏิบัติการคลินิก การค้นคืนความรู้ทางการแพทย์ และการทบทวนหลักฐาน"
+        },
+        {
+          "title": "Commerce และ operations",
+          "description": "ระบบอัตโนมัติสำหรับ customer support การวิเคราะห์ inventory product intelligence และ copilot สำหรับงานภายใน"
+        }
+      ]
+    },
+    "process": {
+      "kicker": "วิธีทำงาน",
+      "title": "จากสัญญาณสู่โปรดักชัน",
+      "items": [
+        {
+          "step": "01",
+          "title": "Map the workflow",
+          "description": "เราศึกษากระบวนการธุรกิจ ขอบเขตข้อมูล บทบาทผู้ใช้ และการตัดสินใจที่ระบบ AI ต้องสนับสนุน"
+        },
+        {
+          "step": "02",
+          "title": "Build the system core",
+          "description": "เราสร้างชั้น retrieval, agent, model และ interface รอบเส้นทางปฏิบัติการที่มีมูลค่าสูงที่สุด"
+        },
+        {
+          "step": "03",
+          "title": "Evaluate hard cases",
+          "description": "เราทดสอบความถูกต้อง latency ความปลอดภัย ความเสี่ยง hallucination และพฤติกรรม escalation ด้วยตัวอย่างจริง"
+        },
+        {
+          "step": "04",
+          "title": "Deploy with governance",
+          "description": "เรานำขึ้นโปรดักชันพร้อม monitoring, access control, feedback loops และ ownership ที่ชัดเจน"
+        }
+      ]
+    },
+    "footer": {
+      "company": "บริษัทระบบ AI ไฮเทค",
+      "contactTitle": "ติดต่อ",
+      "emailLabel": "อีเมล",
+      "email": "studio@nativelab.ai",
+      "phoneLabel": "โทรศัพท์",
+      "phone": "+66 2 026 0198",
+      "phoneHref": "tel:+6620260198",
+      "addressLabel": "ที่อยู่",
+      "address": "Bangkok AI Systems Studio, Pathum Wan, Bangkok 10330",
+      "addressHref": "https://maps.google.com/?q=Pathum%20Wan%20Bangkok%2010330",
+      "socialTitle": "โซเชียล",
+      "socials": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/company/nativelab-ai",
+          "icon": "linkedin"
+        },
+        {
+          "label": "X",
+          "href": "https://x.com/nativelabai",
+          "icon": "x"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/nativelab-ai",
+          "icon": "github"
+        },
+        {
+          "label": "Website",
+          "href": "https://nativelab.ai",
+          "icon": "website"
+        }
+      ]
+    }
+  }
+}

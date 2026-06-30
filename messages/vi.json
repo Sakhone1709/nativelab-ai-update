@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "NativeLab AI | Công ty hệ thống AI công nghệ cao",
+    "description": "NativeLab AI thiết kế và triển khai hệ thống AI riêng tư, công cụ tri thức doanh nghiệp, quy trình agent và pipeline đánh giá mô hình cho các công ty hiện đại."
+  },
+  "Navigation": {
+    "language": "Đổi ngôn ngữ"
+  },
+  "Home": {
+    "nav": {
+      "home": "Trang chủ",
+      "company": "Công ty",
+      "profile": "Công ty",
+      "capabilities": "Năng lực",
+      "technology": "Công nghệ",
+      "caseStudies": "Case studies",
+      "sectors": "Lĩnh vực",
+      "method": "Phương pháp",
+      "contact": "Liên hệ"
+    },
+    "hero": {
+      "kicker": "AI systems studio",
+      "title": "NativeLab AI",
+      "subtitle": "Chúng tôi thiết kế và triển khai hệ thống AI riêng tư cho các đội ngũ cần tự động hóa, tìm kiếm và hỗ trợ quyết định trong vận hành thực tế.",
+      "primaryCta": "Xem năng lực",
+      "secondaryCta": "Hồ sơ công ty",
+      "panelLabel": "Chế độ vận hành hiện tại",
+      "panelStatus": "Thiết kế hệ thống AI cho production"
+    },
+    "stats": [
+      { "value": "VPC / On-prem", "label": "Mô hình triển khai cho dữ liệu doanh nghiệp nhạy cảm" },
+      { "value": "4-8 tuần", "label": "Khung thời gian prototype phổ biến trước khi lập kế hoạch production" },
+      { "value": "Eval-first", "label": "Cổng chất lượng cho retrieval, reasoning và safety" }
+    ],
+    "about": {
+      "kicker": "Hồ sơ công ty",
+      "title": "Công ty AI công nghệ cao xây dựng hệ thống doanh nghiệp dùng được trong thực tế.",
+      "body": "NativeLab AI tập trung vào những phần AI phải hoạt động sau bản demo: lớp retrieval, quy trình agent, đánh giá mô hình, triển khai an toàn và trải nghiệm vận hành. Chúng tôi làm việc sát với đội ngũ kinh doanh và kỹ thuật để hệ thống cuối cùng trở thành một phần tự nhiên của công ty."
+    },
+    "features": {
+      "kicker": "Năng lực",
+      "title": "Hạ tầng AI cho quy trình làm việc thực tế",
+      "items": [
+        {
+          "title": "Enterprise knowledge engines",
+          "description": "Hệ thống RAG riêng tư kết nối chính sách, tài liệu, ticket, cơ sở dữ liệu và tri thức đội ngũ với câu trả lời có dẫn nguồn."
+        },
+        {
+          "title": "Agentic operations",
+          "description": "AI agents biết lập kế hoạch, gọi công cụ, chuẩn bị công việc và chuyển giao cho con người phê duyệt đúng thời điểm."
+        },
+        {
+          "title": "Model customization",
+          "description": "Thích nghi theo domain, hệ thống prompt, chiến lược fine-tuning và bộ dữ liệu đánh giá cho các đội ngũ chuyên môn."
+        },
+        {
+          "title": "Multimodal intelligence",
+          "description": "Hệ thống vision, document, audio và workflow cho công ty có dữ liệu vận hành phức tạp."
+        }
+      ]
+    },
+    "why": {
+      "kicker": "Nguyên tắc vận hành",
+      "title": "Thiết kế cho kiểm soát, tốc độ và niềm tin.",
+      "body": "Công việc có tính công nghệ cao, nhưng sản phẩm phải dễ hiểu. Mỗi hệ thống đều có quyền sở hữu rõ ràng, hành vi đo được và lộ trình từ prototype đến production.",
+      "items": [
+        {
+          "label": "Private by default",
+          "text": "Kiến trúc có thể chạy trong VPC, private cloud hoặc môi trường on-premise có kiểm soát khi quản trị dữ liệu là yêu cầu bắt buộc."
+        },
+        {
+          "label": "Evaluation before scale",
+          "text": "Chúng tôi xác định test sets, failure modes, guardrails và quy trình human review trước khi mở rộng sử dụng."
+        },
+        {
+          "label": "Human-in-the-loop",
+          "text": "Người vận hành vẫn kiểm soát phê duyệt, ngoại lệ và các quyết định quan trọng với doanh nghiệp."
+        }
+      ]
+    },
+    "useCases": {
+      "kicker": "Lĩnh vực",
+      "title": "Quy trình giá trị cao cho đội ngũ AI-native",
+      "items": [
+        {
+          "title": "Tài chính và compliance",
+          "description": "Trợ lý nghiên cứu, tìm kiếm chính sách, quy trình rà soát, phân loại bất thường và tạo báo cáo có kiểm soát."
+        },
+        {
+          "title": "Y tế và nghiên cứu",
+          "description": "Document intelligence, hỗ trợ vận hành lâm sàng, truy xuất tri thức y khoa và rà soát bằng chứng."
+        },
+        {
+          "title": "Commerce và operations",
+          "description": "Tự động hóa hỗ trợ khách hàng, suy luận tồn kho, product intelligence và copilot cho quy trình nội bộ."
+        }
+      ]
+    },
+    "process": {
+      "kicker": "Phương pháp",
+      "title": "Từ tín hiệu đến production",
+      "items": [
+        {
+          "step": "01",
+          "title": "Map the workflow",
+          "description": "Chúng tôi phân tích quy trình kinh doanh, ranh giới dữ liệu, vai trò người dùng và các quyết định hệ thống AI cần hỗ trợ."
+        },
+        {
+          "step": "02",
+          "title": "Build the system core",
+          "description": "Chúng tôi xây dựng các lớp retrieval, agent, model và interface quanh luồng vận hành có giá trị cao nhất."
+        },
+        {
+          "step": "03",
+          "title": "Evaluate hard cases",
+          "description": "Chúng tôi kiểm thử accuracy, latency, security, hallucination risk và hành vi escalation bằng ví dụ thực tế."
+        },
+        {
+          "step": "04",
+          "title": "Deploy with governance",
+          "description": "Chúng tôi đưa vào production với monitoring, access control, feedback loops và ownership rõ ràng."
+        }
+      ]
+    },
+    "footer": {
+      "company": "Công ty hệ thống AI công nghệ cao.",
+      "contactTitle": "Liên hệ",
+      "emailLabel": "Email",
+      "email": "studio@nativelab.ai",
+      "phoneLabel": "Điện thoại",
+      "phone": "+66 2 026 0198",
+      "phoneHref": "tel:+6620260198",
+      "addressLabel": "Địa chỉ",
+      "address": "Bangkok AI Systems Studio, Pathum Wan, Bangkok 10330",
+      "addressHref": "https://maps.google.com/?q=Pathum%20Wan%20Bangkok%2010330",
+      "socialTitle": "Mạng xã hội",
+      "socials": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/company/nativelab-ai",
+          "icon": "linkedin"
+        },
+        {
+          "label": "X",
+          "href": "https://x.com/nativelabai",
+          "icon": "x"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/nativelab-ai",
+          "icon": "github"
+        },
+        {
+          "label": "Website",
+          "href": "https://nativelab.ai",
+          "icon": "website"
+        }
+      ]
+    }
+  }
+}

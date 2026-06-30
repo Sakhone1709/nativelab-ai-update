@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #043927;
+  --background: #020806;
+  --foreground: #f4f7f7;
+  --card: #06120e;
+  --card-foreground: #f4f7f7;
+  --popover: #06120e;
+  --popover-foreground: #f4f7f7;
+  --muted: #081a14;
+  --muted-foreground: #a1abad;
+  --primary: #21d3a4;
+  --primary-foreground: #02100c;
+  --secondary: #0b2119;
+  --secondary-foreground: #edf4f3;
+  --accent: #043927;
+  --accent-foreground: #b9fff1;
+  --destructive: #ff6b5f;
+  --destructive-foreground: #1f0503;
+  --success: #31d68d;
+  --warning: #e6b84d;
+  --border: rgba(220, 245, 242, 0.16);
+  --input: rgba(220, 245, 242, 0.2);
+  --ring: #21d3a4;
+  --radius: 0.5rem;
+  --font-sans: var(--font-locale), var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-space-grotesk), var(--font-locale), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), "SF Mono", Menlo, Consolas, monospace;
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+  --font-mono: var(--font-mono);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(4, 57, 39, 0.38), transparent 28rem),
+    var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-variant-numeric: tabular-nums;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  text-underline-offset: 4px;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.overline {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero-shade {
+  background:
+    linear-gradient(90deg, rgba(2, 8, 6, 0.96) 0%, rgba(2, 8, 6, 0.82) 36%, rgba(4, 57, 39, 0.38) 70%, rgba(2, 8, 6, 0.72) 100%),
+    linear-gradient(180deg, rgba(2, 8, 6, 0.35) 0%, rgba(2, 8, 6, 0.15) 45%, rgba(2, 8, 6, 0.9) 100%);
+}
+
+.technical-grid {
+  background-image:
+    linear-gradient(rgba(220, 245, 242, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(220, 245, 242, 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(90deg, black 0%, transparent 54%);
+}
+
+@media (max-width: 640px) {
+  .hero-shade {
+    background:
+      linear-gradient(180deg, rgba(2, 8, 6, 0.82) 0%, rgba(2, 8, 6, 0.62) 44%, rgba(2, 8, 6, 0.96) 100%),
+      linear-gradient(90deg, rgba(2, 8, 6, 0.92), rgba(4, 57, 39, 0.38));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

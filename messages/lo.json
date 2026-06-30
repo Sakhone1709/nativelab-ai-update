@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "NativeLab AI | ບໍລິສັດລະບົບ AI ໄຮເທັກ",
+    "description": "NativeLab AI ອອກແບບ ແລະ ຕິດຕັ້ງລະບົບ AI ສ່ວນຕົວ, ລະບົບຄວາມຮູ້ອົງກອນ, agent workflows ແລະ model evaluation pipelines."
+  },
+  "Navigation": {
+    "language": "ປ່ຽນພາສາ"
+  },
+  "Home": {
+    "nav": {
+      "home": "ໜ້າຫຼັກ",
+      "company": "ບໍລິສັດ",
+      "profile": "ບໍລິສັດ",
+      "capabilities": "ຄວາມສາມາດ",
+      "technology": "ເທັກໂນໂລຊີ",
+      "caseStudies": "ຜົນງານ",
+      "sectors": "ອຸດສາຫະກຳ",
+      "method": "ວິທີເຮັດວຽກ",
+      "contact": "ຕິດຕໍ່"
+    },
+    "hero": {
+      "kicker": "AI systems studio",
+      "title": "NativeLab AI",
+      "subtitle": "ພວກເຮົາອອກແບບ ແລະ ຕິດຕັ້ງລະບົບ AI ສ່ວນຕົວ ສຳລັບທີມທີ່ຕ້ອງການ automation, search ແລະ decision support ໃນການເຮັດວຽກຈິງ.",
+      "primaryCta": "ເບິ່ງຄວາມສາມາດ",
+      "secondaryCta": "ໂປຣໄຟລ໌ບໍລິສັດ",
+      "panelLabel": "ໂໝດການເຮັດວຽກປັດຈຸບັນ",
+      "panelStatus": "ກຳລັງອອກແບບລະບົບ AI ສຳລັບ production"
+    },
+    "stats": [
+      { "value": "VPC / On-prem", "label": "ຮູບແບບການຕິດຕັ້ງສຳລັບຂໍ້ມູນອົງກອນທີ່ອ່ອນໄຫວ" },
+      { "value": "4-8 ອາທິດ", "label": "ໄລຍະ prototype ທົ່ວໄປກ່ອນວາງແຜນ production" },
+      { "value": "Eval-first", "label": "ປະຕູກວດຄຸນນະພາບສຳລັບ retrieval, reasoning ແລະ safety" }
+    ],
+    "about": {
+      "kicker": "ໂປຣໄຟລ໌ບໍລິສັດ",
+      "title": "ບໍລິສັດ AI ໄຮເທັກທີ່ສ້າງລະບົບອົງກອນໃຫ້ໃຊ້ງານໄດ້ຈິງ",
+      "body": "NativeLab AI ໂຟກັສສ່ວນຂອງ AI ທີ່ຕ້ອງໃຊ້ງານໄດ້ຫຼັງຈາກ demo: retrieval layers, agent workflows, model evaluation, secure deployment ແລະ operator experience. ພວກເຮົາເຮັດວຽກໃກ້ຊິດກັບທີມທຸລະກິດ ແລະ ທີມວິສະວະກຳ ເພື່ອໃຫ້ລະບົບສຸດທ້າຍເປັນສ່ວນໜຶ່ງຂອງອົງກອນ."
+    },
+    "features": {
+      "kicker": "ຄວາມສາມາດ",
+      "title": "ໂຄງສ້າງພື້ນຖານ AI ສຳລັບ workflow ຈິງ",
+      "items": [
+        {
+          "title": "Enterprise knowledge engines",
+          "description": "ລະບົບ RAG ສ່ວນຕົວທີ່ເຊື່ອມນະໂຍບາຍ, ເອກະສານ, tickets, databases ແລະ ຄວາມຮູ້ຂອງທີມ ພ້ອມຄຳຕອບທີ່ອ້າງອີງໄດ້."
+        },
+        {
+          "title": "Agentic operations",
+          "description": "AI agents ທີ່ວາງແຜນ, ເອີ້ນໃຊ້ເຄື່ອງມື, ກະກຽມວຽກ ແລະ ສົ່ງຕໍ່ໃຫ້ຄົນອະນຸມັດໃນຈຸດທີ່ເໝາະສົມ."
+        },
+        {
+          "title": "Model customization",
+          "description": "ການປັບໂມເດວໃຫ້ເຂົ້າກັບ domain, prompt systems, fine-tuning strategy ແລະ evaluation datasets."
+        },
+        {
+          "title": "Multimodal intelligence",
+          "description": "ລະບົບ vision, document, audio ແລະ workflow ສຳລັບບໍລິສັດທີ່ມີຂໍ້ມູນປະຕິບັດການຊັບຊ້ອນ."
+        }
+      ]
+    },
+    "why": {
+      "kicker": "ຫຼັກການເຮັດວຽກ",
+      "title": "ອອກແບບເພື່ອການຄວບຄຸມ, ຄວາມໄວ ແລະ ຄວາມໄວ້ວາງໃຈ",
+      "body": "ວຽກເປັນເທັກໂນໂລຊີຂັ້ນສູງ ແຕ່ຜະລິດຕະພັນຕ້ອງເຂົ້າໃຈໄດ້. ທຸກລະບົບມີ ownership ຊັດເຈນ, ວັດຜົນໄດ້ ແລະ ມີເສັ້ນທາງຈາກ prototype ໄປສູ່ production.",
+      "items": [
+        {
+          "label": "Private by default",
+          "text": "ສະຖາປັດຕະຍະກຳສາມາດເຮັດວຽກໃນ VPC, private cloud ຫຼື on-premise ເມື່ອ data governance ສຳຄັນ."
+        },
+        {
+          "label": "Evaluation before scale",
+          "text": "ພວກເຮົາກຳນົດ test sets, failure modes, guardrails ແລະ human review paths ກ່ອນຂະຫຍາຍການໃຊ້ງານ."
+        },
+        {
+          "label": "Human-in-the-loop",
+          "text": "ຜູ້ປະຕິບັດງານຍັງຄວບຄຸມ approvals, exceptions ແລະ ການຕັດສິນໃຈທີ່ສຳຄັນຕໍ່ທຸລະກິດ."
+        }
+      ]
+    },
+    "useCases": {
+      "kicker": "ອຸດສາຫະກຳ",
+      "title": "workflow ມູນຄ່າສູງສຳລັບທີມ AI-native",
+      "items": [
+        {
+          "title": "ການເງິນ ແລະ compliance",
+          "description": "research assistants, policy search, review workflows, anomaly triage ແລະ report generation ແບບຄວບຄຸມ."
+        },
+        {
+          "title": "ສຸຂະພາບ ແລະ ວິຈັຍ",
+          "description": "document intelligence, clinical operations support, medical knowledge retrieval ແລະ evidence review."
+        },
+        {
+          "title": "Commerce ແລະ operations",
+          "description": "customer support automation, inventory reasoning, product intelligence ແລະ internal workflow copilots."
+        }
+      ]
+    },
+    "process": {
+      "kicker": "ວິທີເຮັດວຽກ",
+      "title": "ຈາກສັນຍານໄປສູ່ production",
+      "items": [
+        {
+          "step": "01",
+          "title": "Map the workflow",
+          "description": "ພວກເຮົາສຶກສາຂະບວນການທຸລະກິດ, ຂອບເຂດຂໍ້ມູນ, ບົດບາດຜູ້ໃຊ້ ແລະ ການຕັດສິນໃຈທີ່ AI ຕ້ອງສະໜັບສະໜູນ."
+        },
+        {
+          "step": "02",
+          "title": "Build the system core",
+          "description": "ພວກເຮົາສ້າງ retrieval, agent, model ແລະ interface layers ຮອບ operational path ທີ່ມີມູນຄ່າສູງສຸດ."
+        },
+        {
+          "step": "03",
+          "title": "Evaluate hard cases",
+          "description": "ພວກເຮົາທົດສອບ accuracy, latency, security, hallucination risk ແລະ escalation behavior ດ້ວຍຕົວຢ່າງຈິງ."
+        },
+        {
+          "step": "04",
+          "title": "Deploy with governance",
+          "description": "ພວກເຮົານຳຂຶ້ນ production ພ້ອມ monitoring, access control, feedback loops ແລະ ownership ທີ່ຊັດເຈນ."
+        }
+      ]
+    },
+    "footer": {
+      "company": "ບໍລິສັດລະບົບ AI ໄຮເທັກ",
+      "contactTitle": "ຕິດຕໍ່",
+      "emailLabel": "ອີເມວ",
+      "email": "studio@nativelab.ai",
+      "phoneLabel": "ໂທລະສັບ",
+      "phone": "+66 2 026 0198",
+      "phoneHref": "tel:+6620260198",
+      "addressLabel": "ທີ່ຢູ່",
+      "address": "Bangkok AI Systems Studio, Pathum Wan, Bangkok 10330",
+      "addressHref": "https://maps.google.com/?q=Pathum%20Wan%20Bangkok%2010330",
+      "socialTitle": "ໂຊເຊຍ",
+      "socials": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/company/nativelab-ai",
+          "icon": "linkedin"
+        },
+        {
+          "label": "X",
+          "href": "https://x.com/nativelabai",
+          "icon": "x"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/nativelab-ai",
+          "icon": "github"
+        },
+        {
+          "label": "Website",
+          "href": "https://nativelab.ai",
+          "icon": "website"
+        }
+      ]
+    }
+  }
+}

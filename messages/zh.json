@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "NativeLab AI | 高科技 AI 系统公司",
+    "description": "NativeLab AI 为现代企业设计并部署私有 AI 系统、企业知识引擎、智能体工作流和模型评估管线。"
+  },
+  "Navigation": {
+    "language": "切换语言"
+  },
+  "Home": {
+    "nav": {
+      "home": "首页",
+      "company": "公司",
+      "profile": "公司",
+      "capabilities": "能力",
+      "technology": "技术",
+      "caseStudies": "案例",
+      "sectors": "行业",
+      "method": "方法",
+      "contact": "联系"
+    },
+    "hero": {
+      "kicker": "AI systems studio",
+      "title": "NativeLab AI",
+      "subtitle": "我们为需要自动化、搜索和决策支持的团队设计并部署私有 AI 系统，让 AI 真正进入企业运营流程。",
+      "primaryCta": "查看能力",
+      "secondaryCta": "公司简介",
+      "panelLabel": "当前工作模式",
+      "panelStatus": "正在设计生产级 AI 系统"
+    },
+    "stats": [
+      { "value": "VPC / On-prem", "label": "适用于敏感企业数据的部署模式" },
+      { "value": "4-8 周", "label": "进入生产规划前的常见原型周期" },
+      { "value": "Eval-first", "label": "面向 retrieval、reasoning 和 safety 的质量门禁" }
+    ],
+    "about": {
+      "kicker": "公司简介",
+      "title": "一家为真实企业系统而建的高科技 AI 公司。",
+      "body": "NativeLab AI 专注于 AI 演示之后必须可靠运行的部分：检索层、智能体工作流、模型评估、安全部署和操作员体验。我们与业务团队和工程团队紧密合作，让最终系统成为企业内部自然的一部分，而不是叠加在流程之上的演示工具。"
+    },
+    "features": {
+      "kicker": "能力",
+      "title": "服务真实工作流的 AI 基础设施",
+      "items": [
+        {
+          "title": "Enterprise knowledge engines",
+          "description": "私有 RAG 系统，连接政策、文档、工单、数据库和团队知识，并提供可追溯来源的回答。"
+        },
+        {
+          "title": "Agentic operations",
+          "description": "能够规划、调用工具、准备工作并在正确节点交给人工审批的 AI 智能体。"
+        },
+        {
+          "title": "Model customization",
+          "description": "面向专业团队的领域适配、提示系统、fine-tuning 策略和评估数据集。"
+        },
+        {
+          "title": "Multimodal intelligence",
+          "description": "面向复杂运营数据的视觉、文档、音频和工作流系统。"
+        }
+      ]
+    },
+    "why": {
+      "kicker": "运行原则",
+      "title": "为控制、速度和信任而设计。",
+      "body": "技术可以很前沿，但产品必须清晰可理解。每个系统都围绕明确的责任归属、可衡量的行为，以及从原型到生产的路径来设计。",
+      "items": [
+        {
+          "label": "Private by default",
+          "text": "当数据治理很重要时，架构可以运行在 VPC、私有云或受控的本地环境中。"
+        },
+        {
+          "label": "Evaluation before scale",
+          "text": "在扩大使用前，我们会定义测试集、失败模式、guardrails 和人工复核路径。"
+        },
+        {
+          "label": "Human-in-the-loop",
+          "text": "操作人员始终控制审批、异常处理和关键业务决策。"
+        }
+      ]
+    },
+    "useCases": {
+      "kicker": "行业",
+      "title": "面向 AI-native 团队的高价值工作流",
+      "items": [
+        {
+          "title": "金融与合规",
+          "description": "研究助手、政策搜索、审查流程、异常分流，以及受控的报告生成。"
+        },
+        {
+          "title": "医疗与研究",
+          "description": "文档智能、临床运营支持、医学知识检索和证据审阅。"
+        },
+        {
+          "title": "商业与运营",
+          "description": "客户支持自动化、库存推理、产品智能，以及内部工作流 copilot。"
+        }
+      ]
+    },
+    "process": {
+      "kicker": "方法",
+      "title": "从业务信号到生产系统",
+      "items": [
+        {
+          "step": "01",
+          "title": "Map the workflow",
+          "description": "我们研究业务流程、数据边界、用户角色，以及 AI 系统必须支持的决策。"
+        },
+        {
+          "step": "02",
+          "title": "Build the system core",
+          "description": "我们围绕最高价值的运营路径构建 retrieval、agent、model 和 interface 层。"
+        },
+        {
+          "step": "03",
+          "title": "Evaluate hard cases",
+          "description": "我们使用真实案例测试 accuracy、latency、security、hallucination risk 和 escalation behavior。"
+        },
+        {
+          "step": "04",
+          "title": "Deploy with governance",
+          "description": "我们通过 monitoring、access control、feedback loops 和明确 ownership 推进生产部署。"
+        }
+      ]
+    },
+    "footer": {
+      "company": "高科技 AI 系统公司。",
+      "contactTitle": "联系",
+      "emailLabel": "邮箱",
+      "email": "studio@nativelab.ai",
+      "phoneLabel": "电话",
+      "phone": "+66 2 026 0198",
+      "phoneHref": "tel:+6620260198",
+      "addressLabel": "地址",
+      "address": "Bangkok AI Systems Studio, Pathum Wan, Bangkok 10330",
+      "addressHref": "https://maps.google.com/?q=Pathum%20Wan%20Bangkok%2010330",
+      "socialTitle": "社交媒体",
+      "socials": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/company/nativelab-ai",
+          "icon": "linkedin"
+        },
+        {
+          "label": "X",
+          "href": "https://x.com/nativelabai",
+          "icon": "x"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/nativelab-ai",
+          "icon": "github"
+        },
+        {
+          "label": "Website",
+          "href": "https://nativelab.ai",
+          "icon": "website"
+        }
+      ]
+    }
+  }
+}

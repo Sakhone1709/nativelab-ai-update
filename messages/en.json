@@ -1,0 +1,161 @@
+{
+  "Metadata": {
+    "title": "NativeLab AI | High-Tech AI Systems Company",
+    "description": "NativeLab AI designs and deploys private AI systems, enterprise knowledge engines, agent workflows, and model evaluation pipelines for modern companies."
+  },
+  "Navigation": {
+    "language": "Change language"
+  },
+  "Home": {
+    "nav": {
+      "home": "Home",
+      "company": "Company",
+      "profile": "Company",
+      "capabilities": "Capabilities",
+      "technology": "Technology",
+      "caseStudies": "Case Studies",
+      "sectors": "Sectors",
+      "method": "Method",
+      "contact": "Contact"
+    },
+    "hero": {
+      "kicker": "AI systems studio",
+      "title": "NativeLab AI",
+      "subtitle": "We design and deploy private AI systems for teams that need automation, search, and decision support inside real operations.",
+      "primaryCta": "See capabilities",
+      "secondaryCta": "Company profile",
+      "panelLabel": "Current operating mode",
+      "panelStatus": "Designing production AI systems"
+    },
+    "stats": [
+      { "value": "VPC / On-prem", "label": "Deployment patterns for sensitive company data" },
+      { "value": "4-8 wks", "label": "Typical prototype window before production planning" },
+      { "value": "Eval-first", "label": "Quality gates for retrieval, reasoning, and safety" }
+    ],
+    "about": {
+      "kicker": "Company profile",
+      "title": "A high-tech AI company built for practical enterprise systems.",
+      "body": "NativeLab AI focuses on the parts of AI that have to work after the demo: retrieval layers, agent workflows, model evaluation, secure deployment, and operator experience. We work close to business and engineering teams so the final system feels native to the company, not pasted on top of it."
+    },
+    "features": {
+      "kicker": "Capabilities",
+      "title": "AI infrastructure for real workflows",
+      "items": [
+        {
+          "title": "Enterprise knowledge engines",
+          "description": "Private RAG systems that connect policies, documents, tickets, databases, and team knowledge with citation-aware answers."
+        },
+        {
+          "title": "Agentic operations",
+          "description": "AI agents that plan, call tools, prepare work, and hand off to people at the right approval point."
+        },
+        {
+          "title": "Model customization",
+          "description": "Domain adaptation, prompt systems, fine-tuning strategy, and evaluation datasets for specialized teams."
+        },
+        {
+          "title": "Multimodal intelligence",
+          "description": "Vision, document, audio, and workflow systems for companies with complex operational data."
+        }
+      ]
+    },
+    "why": {
+      "kicker": "Operating principles",
+      "title": "Designed for control, speed, and trust.",
+      "body": "The work is high-tech, but the product has to be understandable. Every system is designed with clear ownership, measurable behavior, and a path from prototype to production.",
+      "items": [
+        {
+          "label": "Private by default",
+          "text": "Architectures can run inside VPC, private cloud, or controlled on-premise environments where data governance matters."
+        },
+        {
+          "label": "Evaluation before scale",
+          "text": "We define test sets, failure modes, guardrails, and human review paths before expanding usage."
+        },
+        {
+          "label": "Human-in-the-loop",
+          "text": "Operators stay in control of approvals, exceptions, and business-critical decisions."
+        }
+      ]
+    },
+    "useCases": {
+      "kicker": "Sectors",
+      "title": "High-value workflows for AI-native teams",
+      "items": [
+        {
+          "title": "Finance and compliance",
+          "description": "Research assistants, policy search, review workflows, anomaly triage, and controlled report generation."
+        },
+        {
+          "title": "Healthcare and research",
+          "description": "Document intelligence, clinical operations support, medical knowledge retrieval, and evidence review."
+        },
+        {
+          "title": "Commerce and operations",
+          "description": "Customer support automation, inventory reasoning, product intelligence, and internal workflow copilots."
+        }
+      ]
+    },
+    "process": {
+      "kicker": "Method",
+      "title": "From signal to production",
+      "items": [
+        {
+          "step": "01",
+          "title": "Map the workflow",
+          "description": "We study the business process, data boundaries, user roles, and decisions the AI system must support."
+        },
+        {
+          "step": "02",
+          "title": "Build the system core",
+          "description": "We create the retrieval, agent, model, and interface layers around the highest-value operational path."
+        },
+        {
+          "step": "03",
+          "title": "Evaluate hard cases",
+          "description": "We test accuracy, latency, security, hallucination risk, and escalation behavior with real examples."
+        },
+        {
+          "step": "04",
+          "title": "Deploy with governance",
+          "description": "We move into production with monitoring, access control, feedback loops, and clear ownership."
+        }
+      ]
+    },
+    "footer": {
+      "company": "High-tech AI systems company.",
+      "contactTitle": "Contact",
+      "emailLabel": "Email",
+      "email": "studio@nativelab.ai",
+      "phoneLabel": "Phone",
+      "phone": "+66 2 026 0198",
+      "phoneHref": "tel:+6620260198",
+      "addressLabel": "Address",
+      "address": "Bangkok AI Systems Studio, Pathum Wan, Bangkok 10330",
+      "addressHref": "https://maps.google.com/?q=Pathum%20Wan%20Bangkok%2010330",
+      "socialTitle": "Social",
+      "socials": [
+        {
+          "label": "LinkedIn",
+          "href": "https://www.linkedin.com/company/nativelab-ai",
+          "icon": "linkedin"
+        },
+        {
+          "label": "X",
+          "href": "https://x.com/nativelabai",
+          "icon": "x"
+        },
+        {
+          "label": "GitHub",
+          "href": "https://github.com/nativelab-ai",
+          "icon": "github"
+        },
+        {
+          "label": "Website",
+          "href": "https://nativelab.ai",
+          "icon": "website"
+        }
+      ]
+    }
+  }
+}
