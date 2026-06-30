@@ -11,10 +11,89 @@ import { LanguageSwitcher } from "@/components/language-switcher";
 import { Link } from "@/i18n/navigation";
 import type { FooterCopy, NavCopy, SocialLink } from "@/lib/site-copy";
 
-export function BrandMark() {
+export function BrandMark({
+  className = "h-9 w-9",
+  uid = "bm",
+}: {
+  className?: string;
+  uid?: string;
+}) {
+  const tile = `${uid}-tile`;
+  const ink = `${uid}-ink`;
+  const glow = `${uid}-glow`;
+
   return (
-    <span className="flex h-9 w-9 items-center justify-center rounded-md border border-primary/35 bg-brand text-sm font-semibold text-foreground">
-      N
+    <svg
+      aria-hidden="true"
+      className={className}
+      fill="none"
+      viewBox="0 0 64 64"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id={tile}
+          x1="8"
+          x2="56"
+          y1="6"
+          y2="58"
+        >
+          <stop offset="0" stopColor="#075037" />
+          <stop offset="1" stopColor="#03231a" />
+        </linearGradient>
+        <linearGradient
+          gradientUnits="userSpaceOnUse"
+          id={ink}
+          x1="32"
+          x2="32"
+          y1="16"
+          y2="48"
+        >
+          <stop offset="0" stopColor="#5ff0cd" />
+          <stop offset="1" stopColor="#21d3a4" />
+        </linearGradient>
+        <filter height="180%" id={glow} width="180%" x="-40%" y="-40%">
+          <feGaussianBlur result="b" stdDeviation="1.4" />
+          <feMerge>
+            <feMergeNode in="b" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+
+      <rect fill={`url(#${tile})`} height="58" rx="15" width="58" x="3" y="3" />
+      <rect
+        fill="none"
+        height="56.5"
+        rx="14.25"
+        stroke="#21d3a4"
+        strokeOpacity="0.55"
+        strokeWidth="1.5"
+        width="56.5"
+        x="3.75"
+        y="3.75"
+      />
+
+      <g fill={`url(#${ink})`} filter={`url(#${glow})`}>
+        <rect height="30" rx="2" width="8" x="18" y="17" />
+        <rect height="30" rx="2" width="8" x="38" y="17" />
+        <path d="M18 17 L26 17 L46 47 L38 47 Z" />
+      </g>
+
+      <circle cx="42" cy="17.5" fill="#21d3a4" fillOpacity="0.28" r="8" />
+      <circle cx="42" cy="17.5" fill="#7df7d6" r="4.4" />
+      <circle cx="42" cy="17.5" fill="#03231a" r="1.6" />
+    </svg>
+  );
+}
+
+export function Wordmark({ className = "" }: { className?: string }) {
+  return (
+    <span
+      className={`font-heading font-semibold tracking-tight text-foreground ${className}`}
+    >
+      NativeLab<span className="text-primary">&nbsp;AI</span>
     </span>
   );
 }
@@ -75,11 +154,14 @@ export function SiteHeader({ nav }: { nav: NavCopy }) {
     <header className="fixed inset-x-0 top-0 z-40 border-b border-border/80 bg-background/82 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
         <Link
-          className="flex items-center gap-3 rounded-md text-sm font-semibold text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+          className="group flex items-center gap-2.5 rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
           href="/"
         >
-          <BrandMark />
-          <span>NativeLab AI</span>
+          <BrandMark
+            className="h-9 w-9 transition-transform duration-200 group-hover:scale-105"
+            uid="hdr"
+          />
+          <Wordmark className="text-[15px]" />
         </Link>
         <nav
           aria-label="Primary navigation"
@@ -118,11 +200,9 @@ export function SiteFooter({ footer }: { footer: FooterCopy }) {
       <div className="mx-auto grid w-full max-w-7xl gap-10 lg:grid-cols-[0.78fr_1.42fr_0.55fr]">
         <div>
           <div className="flex items-center gap-3">
-            <BrandMark />
+            <BrandMark className="h-9 w-9" uid="ftr" />
             <div>
-              <p className="text-sm font-semibold text-foreground">
-                NativeLab AI
-              </p>
+              <Wordmark className="text-sm" />
               <p className="mt-1 text-sm text-muted-foreground">
                 {footer.company}
               </p>
