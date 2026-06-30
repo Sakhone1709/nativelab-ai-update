@@ -20,7 +20,7 @@
     },
     "hero": {
       "kicker": "AI systems studio",
-      "title": "NativeLab AI",
+      "title": "在演示之后依然稳定运行的私有 AI 系统",
       "subtitle": "我们为需要自动化、搜索和决策支持的团队设计并部署私有 AI 系统，让 AI 真正进入企业运营流程。",
       "primaryCta": "查看能力",
       "secondaryCta": "公司简介",
@@ -28,9 +28,18 @@
       "panelStatus": "正在设计生产级 AI 系统"
     },
     "stats": [
-      { "value": "VPC / On-prem", "label": "适用于敏感企业数据的部署模式" },
-      { "value": "4-8 周", "label": "进入生产规划前的常见原型周期" },
-      { "value": "Eval-first", "label": "面向 retrieval、reasoning 和 safety 的质量门禁" }
+      {
+        "value": "VPC / On-prem",
+        "label": "适用于敏感企业数据的部署模式"
+      },
+      {
+        "value": "4-8 周",
+        "label": "进入生产规划前的常见原型周期"
+      },
+      {
+        "value": "Eval-first",
+        "label": "面向 retrieval、reasoning 和 safety 的质量门禁"
+      }
     ],
     "about": {
       "kicker": "公司简介",

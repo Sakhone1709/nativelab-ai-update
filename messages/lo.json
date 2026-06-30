@@ -20,7 +20,7 @@
     },
     "hero": {
       "kicker": "AI systems studio",
-      "title": "NativeLab AI",
+      "title": "ລະບົບ AI ສ່ວນຕົວ ທີ່ຍັງເຮັດວຽກໄດ້ຫຼັງຈົບເດໂມ",
       "subtitle": "ພວກເຮົາອອກແບບ ແລະ ຕິດຕັ້ງລະບົບ AI ສ່ວນຕົວ ສຳລັບທີມທີ່ຕ້ອງການ automation, search ແລະ decision support ໃນການເຮັດວຽກຈິງ.",
       "primaryCta": "ເບິ່ງຄວາມສາມາດ",
       "secondaryCta": "ໂປຣໄຟລ໌ບໍລິສັດ",
@@ -28,9 +28,18 @@
       "panelStatus": "ກຳລັງອອກແບບລະບົບ AI ສຳລັບ production"
     },
     "stats": [
-      { "value": "VPC / On-prem", "label": "ຮູບແບບການຕິດຕັ້ງສຳລັບຂໍ້ມູນອົງກອນທີ່ອ່ອນໄຫວ" },
-      { "value": "4-8 ອາທິດ", "label": "ໄລຍະ prototype ທົ່ວໄປກ່ອນວາງແຜນ production" },
-      { "value": "Eval-first", "label": "ປະຕູກວດຄຸນນະພາບສຳລັບ retrieval, reasoning ແລະ safety" }
+      {
+        "value": "VPC / On-prem",
+        "label": "ຮູບແບບການຕິດຕັ້ງສຳລັບຂໍ້ມູນອົງກອນທີ່ອ່ອນໄຫວ"
+      },
+      {
+        "value": "4-8 ອາທິດ",
+        "label": "ໄລຍະ prototype ທົ່ວໄປກ່ອນວາງແຜນ production"
+      },
+      {
+        "value": "Eval-first",
+        "label": "ປະຕູກວດຄຸນນະພາບສຳລັບ retrieval, reasoning ແລະ safety"
+      }
     ],
     "about": {
       "kicker": "ໂປຣໄຟລ໌ບໍລິສັດ",

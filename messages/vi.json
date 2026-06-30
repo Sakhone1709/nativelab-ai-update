@@ -20,7 +20,7 @@
     },
     "hero": {
       "kicker": "AI systems studio",
-      "title": "NativeLab AI",
+      "title": "Hệ thống AI riêng tư vẫn vận hành tốt sau bản demo",
       "subtitle": "Chúng tôi thiết kế và triển khai hệ thống AI riêng tư cho các đội ngũ cần tự động hóa, tìm kiếm và hỗ trợ quyết định trong vận hành thực tế.",
       "primaryCta": "Xem năng lực",
       "secondaryCta": "Hồ sơ công ty",
@@ -28,9 +28,18 @@
       "panelStatus": "Thiết kế hệ thống AI cho production"
     },
     "stats": [
-      { "value": "VPC / On-prem", "label": "Mô hình triển khai cho dữ liệu doanh nghiệp nhạy cảm" },
-      { "value": "4-8 tuần", "label": "Khung thời gian prototype phổ biến trước khi lập kế hoạch production" },
-      { "value": "Eval-first", "label": "Cổng chất lượng cho retrieval, reasoning và safety" }
+      {
+        "value": "VPC / On-prem",
+        "label": "Mô hình triển khai cho dữ liệu doanh nghiệp nhạy cảm"
+      },
+      {
+        "value": "4-8 tuần",
+        "label": "Khung thời gian prototype phổ biến trước khi lập kế hoạch production"
+      },
+      {
+        "value": "Eval-first",
+        "label": "Cổng chất lượng cho retrieval, reasoning và safety"
+      }
     ],
     "about": {
       "kicker": "Hồ sơ công ty",

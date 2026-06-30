@@ -81,8 +81,22 @@ export function BrandMark({
         <path d="M18 17 L26 17 L46 47 L38 47 Z" />
       </g>
 
-      <circle cx="42" cy="17.5" fill="#21d3a4" fillOpacity="0.28" r="8" />
-      <circle cx="42" cy="17.5" fill="#7df7d6" r="4.4" />
+      {/* signal flowing along the N */}
+      <path
+        className="logo-flow"
+        d="M22 47 L22 17 L42 47 L42 17"
+        fill="none"
+        filter={`url(#${glow})`}
+        pathLength={100}
+        stroke="#c4fce9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="3"
+      />
+
+      {/* AI node: steady core + outward ping */}
+      <circle className="logo-ping" cx="42" cy="17.5" fill="#5ff0cd" r="7.5" />
+      <circle className="logo-core" cx="42" cy="17.5" fill="#7df7d6" r="4.4" />
       <circle cx="42" cy="17.5" fill="#03231a" r="1.6" />
     </svg>
   );

@@ -20,7 +20,7 @@
     },
     "hero": {
       "kicker": "AI systems studio",
-      "title": "NativeLab AI",
+      "title": "Private AI systems that work after the demo.",
       "subtitle": "We design and deploy private AI systems for teams that need automation, search, and decision support inside real operations.",
       "primaryCta": "See capabilities",
       "secondaryCta": "Company profile",
@@ -28,9 +28,18 @@
       "panelStatus": "Designing production AI systems"
     },
     "stats": [
-      { "value": "VPC / On-prem", "label": "Deployment patterns for sensitive company data" },
-      { "value": "4-8 wks", "label": "Typical prototype window before production planning" },
-      { "value": "Eval-first", "label": "Quality gates for retrieval, reasoning, and safety" }
+      {
+        "value": "VPC / On-prem",
+        "label": "Deployment patterns for sensitive company data"
+      },
+      {
+        "value": "4-8 wks",
+        "label": "Typical prototype window before production planning"
+      },
+      {
+        "value": "Eval-first",
+        "label": "Quality gates for retrieval, reasoning, and safety"
+      }
     ],
     "about": {
       "kicker": "Company profile",

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import {
   Activity,
@@ -18,6 +17,8 @@ import {
 } from "lucide-react";
 
 import { AiCore } from "@/components/ai-core";
+import { EvalPanel } from "@/components/eval-panel";
+import { NeuralFlow } from "@/components/neural-flow";
 import { SectionHeader, SiteFooter, SiteHeader } from "@/components/site-chrome";
 import { Link } from "@/i18n/navigation";
 import type { HomeCopy } from "@/lib/site-copy";
@@ -55,17 +56,30 @@ export function HomeClient({ t }: HomeClientProps) {
         className="relative isolate min-h-[92svh] overflow-hidden border-b border-border"
         id="top"
       >
-        <div className="absolute inset-0 -z-20 bg-[radial-gradient(125%_125%_at_72%_35%,rgba(4,57,39,0.55),transparent_60%)]" />
+        <div className="absolute inset-0 -z-30 bg-[radial-gradient(125%_125%_at_72%_35%,rgba(4,57,39,0.55),transparent_60%)]" />
+        <div className="aurora absolute -z-20 right-[6%] top-[14%] h-[58vh] w-[58vh] rounded-full bg-[radial-gradient(circle,rgba(33,211,164,0.18),transparent_62%)] blur-3xl" />
+        <div
+          className="aurora absolute -z-20 left-[2%] top-[44%] h-[48vh] w-[48vh] rounded-full bg-[radial-gradient(circle,rgba(4,57,39,0.55),transparent_60%)] blur-3xl"
+          style={{ animationDelay: "-9s", animationDuration: "23s" }}
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute right-[-15%] top-1/2 -z-[15] hidden -translate-y-1/2 opacity-[0.16] [mask-image:radial-gradient(circle_at_center,black,transparent_70%)] lg:block"
+        >
+          <AiCore className="h-[760px] w-[760px]" />
+        </div>
         <div className="technical-grid absolute inset-0 -z-10 opacity-50" />
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.85 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.4, ease: "easeOut" }}
-          className="pointer-events-none absolute inset-0 flex items-start justify-center pt-20 opacity-40 lg:left-auto lg:w-[46%] lg:items-center lg:justify-center lg:pt-0 lg:opacity-100"
-        >
-          <AiCore className="h-[280px] w-[280px] sm:h-[360px] sm:w-[360px] lg:h-[460px] lg:w-[460px] lg:-translate-y-10" />
-        </motion.div>
+        <div className="pointer-events-none absolute inset-y-0 left-1/2 z-20 hidden w-full max-w-7xl -translate-x-1/2 px-5 sm:px-8 lg:block lg:px-10">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+            className="pointer-events-auto absolute right-5 top-1/2 -translate-y-1/2 sm:right-8 lg:right-10"
+          >
+            <EvalPanel />
+          </motion.div>
+        </div>
 
         <div className="relative z-10 mx-auto flex min-h-[92svh] w-full max-w-7xl flex-col justify-end px-5 pb-8 pt-28 sm:px-8 lg:px-10">
           <motion.div 
@@ -141,14 +155,8 @@ export function HomeClient({ t }: HomeClientProps) {
         >
           <motion.div variants={fadeUp}>
             <SectionHeader kicker={t.about.kicker} title={t.about.title} />
-            <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-md border border-border">
-              <Image
-                alt="AI engineering studio with a team reviewing model evaluation systems"
-                className="object-cover object-center"
-                fill
-                sizes="(min-width: 1024px) 40vw, 100vw"
-                src="/ai-company-studio.png"
-              />
+            <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-md border border-border bg-card">
+              <NeuralFlow />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_55%,rgba(2,8,6,0.55))]" />
             </div>
           </motion.div>
@@ -323,7 +331,7 @@ export function HomeClient({ t }: HomeClientProps) {
       </section>
 
       <section className="border-b border-border bg-background" id="method">
-        <motion.div 
+        <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -334,21 +342,25 @@ export function HomeClient({ t }: HomeClientProps) {
             <SectionHeader kicker={t.process.kicker} title={t.process.title} />
           </motion.div>
 
-          <ol className="mt-12 grid gap-4 lg:grid-cols-4">
+          <ol className="mt-12 grid gap-5 lg:grid-cols-4">
             {t.process.items.map((step) => (
               <motion.li
                 variants={fadeUp}
-                whileHover={{ scale: 1.03 }}
-                className="rounded-md border border-border bg-background p-6 transition-transform hover:border-primary/50 cursor-default"
+                whileHover={{ y: -6 }}
+                transition={{ type: "spring", stiffness: 300, damping: 26 }}
+                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-[0_20px_44px_-18px_rgba(7,20,15,0.3)]"
                 key={step.step}
               >
-                <p className="font-mono text-sm font-semibold text-primary">
+                <span className="absolute right-5 top-5 font-mono text-5xl font-bold text-primary/10 transition-colors group-hover:text-primary/20">
                   {step.step}
-                </p>
-                <h3 className="mt-8 text-xl font-semibold text-foreground">
+                </span>
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 font-mono text-sm font-semibold text-primary ring-1 ring-primary/20 transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
+                  {step.step}
+                </span>
+                <h3 className="mt-6 text-xl font-semibold text-card-foreground">
                   {step.title}
                 </h3>
-                <p className="mt-4 text-sm leading-7 text-muted-foreground">
+                <p className="mt-3 text-sm leading-7 text-muted-foreground">
                   {step.description}
                 </p>
               </motion.li>
