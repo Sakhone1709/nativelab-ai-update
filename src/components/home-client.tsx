@@ -16,10 +16,11 @@ import {
   Workflow,
 } from "lucide-react";
 
-import { AiCore } from "@/components/ai-core";
-import { EvalPanel } from "@/components/eval-panel";
+import { MethodSection } from "@/components/method-section";
+import { HeroAtmosphere } from "@/components/hero-atmosphere";
 import { NeuralFlow } from "@/components/neural-flow";
 import { SectionHeader, SiteFooter, SiteHeader } from "@/components/site-chrome";
+import { BrandHeading } from "@/components/brand-heading";
 import { Link } from "@/i18n/navigation";
 import type { HomeCopy } from "@/lib/site-copy";
 
@@ -53,44 +54,24 @@ export function HomeClient({ t }: HomeClientProps) {
       <SiteHeader nav={t.nav} />
 
       <section
-        className="relative isolate min-h-[92svh] overflow-hidden border-b border-border"
+        className="home-hero relative isolate overflow-hidden border-b border-border"
         id="top"
       >
-        <div className="absolute inset-0 -z-30 bg-[radial-gradient(125%_125%_at_72%_35%,rgba(4,57,39,0.55),transparent_60%)]" />
-        <div className="aurora absolute -z-20 right-[6%] top-[14%] h-[58vh] w-[58vh] rounded-full bg-[radial-gradient(circle,rgba(33,211,164,0.18),transparent_62%)] blur-3xl" />
-        <div
-          className="aurora absolute -z-20 left-[2%] top-[44%] h-[48vh] w-[48vh] rounded-full bg-[radial-gradient(circle,rgba(4,57,39,0.55),transparent_60%)] blur-3xl"
-          style={{ animationDelay: "-9s", animationDuration: "23s" }}
-        />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute right-[-15%] top-1/2 -z-[15] hidden -translate-y-1/2 opacity-[0.16] [mask-image:radial-gradient(circle_at_center,black,transparent_70%)] lg:block"
-        >
-          <AiCore className="h-[760px] w-[760px]" />
-        </div>
-        <div className="technical-grid absolute inset-0 -z-10 opacity-50" />
+        <HeroAtmosphere kind="home" />
+        <div className="technical-grid absolute inset-0 -z-10 opacity-30" />
 
-        <div className="pointer-events-none absolute inset-y-0 left-1/2 z-20 hidden w-full max-w-7xl -translate-x-1/2 px-5 sm:px-8 lg:block lg:px-10">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="pointer-events-auto absolute right-5 top-1/2 -translate-y-1/2 sm:right-8 lg:right-10"
-          >
-            <EvalPanel />
-          </motion.div>
-        </div>
+        <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-col justify-end px-5 pb-8 pt-28 sm:px-8 lg:px-10">
+        <div className="hero-visual-space" aria-hidden="true" />
 
-        <div className="relative z-10 mx-auto flex min-h-[92svh] w-full max-w-7xl flex-col justify-end px-5 pb-8 pt-28 sm:px-8 lg:px-10">
           <motion.div 
-            initial="hidden"
+            initial={false}
             animate="visible"
             variants={staggerContainer}
-            className="max-w-4xl pb-12 pt-16 sm:pb-16 lg:pb-20"
+            className="hero-copy max-w-4xl pb-12 pt-16 sm:pb-16 lg:pb-20"
           >
             <motion.p variants={fadeUp} className="overline text-primary">{t.hero.kicker}</motion.p>
             <motion.h1 variants={fadeUp} className="mt-6 max-w-4xl text-5xl font-semibold leading-[0.98] text-foreground sm:text-6xl lg:text-7xl">
-              {t.hero.title}
+              <BrandHeading text={t.hero.title} />
             </motion.h1>
             <motion.p variants={fadeUp} className="mt-6 max-w-2xl text-lg leading-8 text-foreground/78 sm:text-xl">
               {t.hero.subtitle}
@@ -113,7 +94,7 @@ export function HomeClient({ t }: HomeClientProps) {
           </motion.div>
 
           <motion.div 
-            initial={{ opacity: 0, y: 40 }}
+            initial={false}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="grid border border-border bg-background/72 backdrop-blur-md md:grid-cols-[0.95fr_repeat(3,1fr)]"
@@ -127,7 +108,7 @@ export function HomeClient({ t }: HomeClientProps) {
                 {t.hero.panelStatus}
               </p>
             </div>
-            {t.stats.map((stat, i) => (
+            {t.stats.map((stat) => (
               <motion.div
                 whileHover={{ backgroundColor: "rgba(255,255,255,0.03)" }}
                 className="border-t border-border p-5 md:border-l md:border-t-0 transition-colors"
@@ -147,7 +128,7 @@ export function HomeClient({ t }: HomeClientProps) {
 
       <section className="border-b border-border bg-background" id="profile">
         <motion.div 
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
@@ -171,7 +152,6 @@ export function HomeClient({ t }: HomeClientProps) {
                 return (
                   <motion.article
                     variants={fadeUp}
-                    whileHover={{ y: -5, borderColor: "var(--ring)" }}
                     className="rounded-md border border-border bg-card p-5 transition-all"
                     key={principle.label}
                   >
@@ -195,7 +175,7 @@ export function HomeClient({ t }: HomeClientProps) {
         id="capabilities"
       >
         <motion.div 
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
@@ -215,7 +195,6 @@ export function HomeClient({ t }: HomeClientProps) {
               return (
                 <motion.article
                   variants={fadeUp}
-                  whileHover={{ y: -8, scale: 1.02 }}
                   className="group flex min-h-72 flex-col rounded-md border border-border bg-card p-6 transition-all hover:border-primary/60 hover:shadow-lg hover:shadow-primary/5"
                   key={feature.title}
                 >
@@ -243,7 +222,7 @@ export function HomeClient({ t }: HomeClientProps) {
 
       <section className="border-b border-border bg-background" id="sectors">
         <motion.div 
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
@@ -261,7 +240,6 @@ export function HomeClient({ t }: HomeClientProps) {
 
               return (
                 <motion.article
-                  whileHover={{ backgroundColor: "var(--muted)", x: 4 }}
                   className="grid gap-5 border-b border-border p-6 last:border-b-0 sm:grid-cols-[auto_1fr] transition-all"
                   key={useCase.title}
                 >
@@ -285,7 +263,7 @@ export function HomeClient({ t }: HomeClientProps) {
 
       <section className="border-b border-border bg-muted">
         <motion.div 
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
@@ -308,7 +286,6 @@ export function HomeClient({ t }: HomeClientProps) {
             {t.selectedWork.items.map((item) => (
               <motion.article
                 variants={fadeUp}
-                whileHover={{ y: -5 }}
                 className="rounded-md border border-border bg-background p-6 transition-all hover:border-primary/50 hover:shadow-md"
                 key={item.title}
               >
@@ -330,48 +307,11 @@ export function HomeClient({ t }: HomeClientProps) {
         </motion.div>
       </section>
 
-      <section className="border-b border-border bg-background" id="method">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          variants={staggerContainer}
-          className="mx-auto w-full max-w-7xl px-5 py-20 sm:px-8 lg:px-10 lg:py-28"
-        >
-          <motion.div variants={fadeUp}>
-            <SectionHeader kicker={t.process.kicker} title={t.process.title} />
-          </motion.div>
-
-          <ol className="mt-12 grid gap-5 lg:grid-cols-4">
-            {t.process.items.map((step) => (
-              <motion.li
-                variants={fadeUp}
-                whileHover={{ y: -6 }}
-                transition={{ type: "spring", stiffness: 300, damping: 26 }}
-                className="group relative overflow-hidden rounded-2xl border border-border bg-card p-6 shadow-sm transition-shadow duration-300 hover:shadow-[0_20px_44px_-18px_rgba(7,20,15,0.3)]"
-                key={step.step}
-              >
-                <span className="absolute right-5 top-5 font-mono text-5xl font-bold text-primary/10 transition-colors group-hover:text-primary/20">
-                  {step.step}
-                </span>
-                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 font-mono text-sm font-semibold text-primary ring-1 ring-primary/20 transition-colors duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
-                  {step.step}
-                </span>
-                <h3 className="mt-6 text-xl font-semibold text-card-foreground">
-                  {step.title}
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                  {step.description}
-                </p>
-              </motion.li>
-            ))}
-          </ol>
-        </motion.div>
-      </section>
+      <MethodSection process={t.process} />
 
       <section className="border-b border-border bg-background">
         <motion.div 
-          initial="hidden"
+          initial={false}
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={staggerContainer}
@@ -394,7 +334,7 @@ export function HomeClient({ t }: HomeClientProps) {
             <div className="divide-y divide-border">
               {t.why.items.map((item, index) => (
                 <motion.div 
-                  initial={{ opacity: 0, x: 20 }}
+                  initial={false}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 * index }}
                   viewport={{ once: true }}

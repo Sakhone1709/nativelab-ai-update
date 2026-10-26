@@ -24,17 +24,17 @@ const COUNTRY_HEADERS = [
 /** ISO 3166-1 alpha-2 country → supported locale. Unlisted countries fall through. */
 const COUNTRY_TO_LOCALE: Record<string, Locale> = {
   TH: "th",
-  CN: "zh",
-  HK: "zh",
-  MO: "zh",
-  TW: "zh",
+  CN: "zh-CN",
+  HK: "zh-CN",
+  MO: "zh-CN",
+  TW: "zh-CN",
   VN: "vi",
   LA: "lo",
 };
 
 function fromCookie(request: NextRequest): Locale | undefined {
   const value = request.cookies.get(LOCALE_COOKIE)?.value;
-  return isLocale(value) ? value : undefined;
+  return value === "ja" ? "vi" : value === "zh" ? "zh-CN" : isLocale(value) ? value : undefined;
 }
 
 function fromGeo(request: NextRequest): Locale | undefined {
@@ -68,6 +68,7 @@ function fromAcceptLanguage(request: NextRequest): Locale | undefined {
     .sort((a, b) => b.q - a.q);
 
   for (const { lang } of ranked) {
+    if (lang === "zh") return "zh-CN";
     if (isLocale(lang)) return lang;
   }
   return undefined;

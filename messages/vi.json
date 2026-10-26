@@ -4,7 +4,10 @@
     "description": "NativeLab AI thiết kế và triển khai hệ thống AI riêng tư, công cụ tri thức doanh nghiệp, quy trình agent và pipeline đánh giá mô hình cho các công ty hiện đại."
   },
   "Navigation": {
-    "language": "Đổi ngôn ngữ"
+    "language": "Đổi ngôn ngữ",
+    "primary": "Điều hướng chính",
+    "openMenu": "Mở menu",
+    "closeMenu": "Đóng menu"
   },
   "Home": {
     "nav": {
@@ -13,13 +16,13 @@
       "profile": "Công ty",
       "capabilities": "Năng lực",
       "technology": "Công nghệ",
-      "caseStudies": "Case studies",
+      "caseStudies": "Dự án tiêu biểu",
       "sectors": "Lĩnh vực",
       "method": "Phương pháp",
       "contact": "Liên hệ"
     },
     "hero": {
-      "kicker": "AI systems studio",
+      "kicker": "Studio hệ thống AI",
       "title": "Hệ thống AI riêng tư vẫn vận hành tốt sau bản demo",
       "subtitle": "Chúng tôi thiết kế và triển khai hệ thống AI riêng tư cho các đội ngũ cần tự động hóa, tìm kiếm và hỗ trợ quyết định trong vận hành thực tế.",
       "primaryCta": "Xem năng lực",
@@ -29,7 +32,7 @@
     },
     "stats": [
       {
-        "value": "VPC / On-prem",
+        "value": "VPC / Tại chỗ",
         "label": "Mô hình triển khai cho dữ liệu doanh nghiệp nhạy cảm"
       },
       {
@@ -37,7 +40,7 @@
         "label": "Khung thời gian prototype phổ biến trước khi lập kế hoạch production"
       },
       {
-        "value": "Eval-first",
+        "value": "Đánh giá trước",
         "label": "Cổng chất lượng cho retrieval, reasoning và safety"
       }
     ],
@@ -51,19 +54,19 @@
       "title": "Hạ tầng AI cho quy trình làm việc thực tế",
       "items": [
         {
-          "title": "Enterprise knowledge engines",
+          "title": "Công cụ tri thức doanh nghiệp",
           "description": "Hệ thống RAG riêng tư kết nối chính sách, tài liệu, ticket, cơ sở dữ liệu và tri thức đội ngũ với câu trả lời có dẫn nguồn."
         },
         {
-          "title": "Agentic operations",
+          "title": "Vận hành tác tử",
           "description": "AI agents biết lập kế hoạch, gọi công cụ, chuẩn bị công việc và chuyển giao cho con người phê duyệt đúng thời điểm."
         },
         {
-          "title": "Model customization",
+          "title": "Tùy chỉnh mô hình",
           "description": "Thích nghi theo domain, hệ thống prompt, chiến lược fine-tuning và bộ dữ liệu đánh giá cho các đội ngũ chuyên môn."
         },
         {
-          "title": "Multimodal intelligence",
+          "title": "Trí tuệ đa phương thức",
           "description": "Hệ thống vision, document, audio và workflow cho công ty có dữ liệu vận hành phức tạp."
         }
       ]
@@ -74,15 +77,15 @@
       "body": "Công việc có tính công nghệ cao, nhưng sản phẩm phải dễ hiểu. Mỗi hệ thống đều có quyền sở hữu rõ ràng, hành vi đo được và lộ trình từ prototype đến production.",
       "items": [
         {
-          "label": "Private by default",
+          "label": "Riêng tư mặc định",
           "text": "Kiến trúc có thể chạy trong VPC, private cloud hoặc môi trường on-premise có kiểm soát khi quản trị dữ liệu là yêu cầu bắt buộc."
         },
         {
-          "label": "Evaluation before scale",
+          "label": "Đánh giá trước khi mở rộng",
           "text": "Chúng tôi xác định test sets, failure modes, guardrails và quy trình human review trước khi mở rộng sử dụng."
         },
         {
-          "label": "Human-in-the-loop",
+          "label": "Con người tham gia kiểm soát",
           "text": "Người vận hành vẫn kiểm soát phê duyệt, ngoại lệ và các quyết định quan trọng với doanh nghiệp."
         }
       ]
@@ -111,25 +114,26 @@
       "items": [
         {
           "step": "01",
-          "title": "Map the workflow",
+          "title": "Lập bản đồ quy trình",
           "description": "Chúng tôi phân tích quy trình kinh doanh, ranh giới dữ liệu, vai trò người dùng và các quyết định hệ thống AI cần hỗ trợ."
         },
         {
           "step": "02",
-          "title": "Build the system core",
+          "title": "Xây dựng lõi hệ thống",
           "description": "Chúng tôi xây dựng các lớp retrieval, agent, model và interface quanh luồng vận hành có giá trị cao nhất."
         },
         {
           "step": "03",
-          "title": "Evaluate hard cases",
+          "title": "Đánh giá tình huống khó",
           "description": "Chúng tôi kiểm thử accuracy, latency, security, hallucination risk và hành vi escalation bằng ví dụ thực tế."
         },
         {
           "step": "04",
-          "title": "Deploy with governance",
+          "title": "Triển khai có quản trị",
           "description": "Chúng tôi đưa vào production với monitoring, access control, feedback loops và ownership rõ ràng."
         }
-      ]
+      ],
+      "body": "Quy trình rõ ràng, có thể lặp lại để chuyển tín hiệu kinh doanh thành hệ thống AI đáng tin cậy — từ phân tích đến vận hành, với cơ chế quản trị ngay từ đầu."
     },
     "footer": {
       "company": "Công ty hệ thống AI công nghệ cao.",
@@ -166,5 +170,471 @@
         }
       ]
     }
+  },
+  "Profiles": {
+    "company": {
+      "slug": "company",
+      "kicker": "Hồ sơ công ty",
+      "title": "Công ty hệ thống AI công nghệ cao, xây dựng từ thực tế vận hành.",
+      "description": "NativeLab AI thiết kế hệ thống AI riêng tư cho doanh nghiệp cần tự động hóa có thể đo lường, truy xuất tri thức đáng tin cậy và hỗ trợ quyết định có kiểm soát.",
+      "stats": [
+        {
+          "value": "AI nguyên bản",
+          "label": "Hệ thống được thiết kế theo hành vi mô hình và hoạt động thực tế"
+        },
+        {
+          "value": "Riêng tư",
+          "label": "Lựa chọn triển khai cho dữ liệu doanh nghiệp được quản trị"
+        },
+        {
+          "value": "Đánh giá trước",
+          "label": "Cổng chất lượng trước khi triển khai diện rộng"
+        }
+      ],
+      "cardsTitle": "Điều làm nên công ty",
+      "cards": [
+        {
+          "eyebrow": "Sứ mệnh",
+          "title": "Biến AI thành công cụ hữu ích trong vận hành",
+          "description": "Chúng tôi xây dựng theo công việc thực tế: tìm tri thức, chuẩn bị quyết định, xem xét ngoại lệ và chuyển nhiệm vụ qua quy trình an toàn."
+        },
+        {
+          "eyebrow": "Mô hình studio",
+          "title": "Đội ngũ chuyên gia nhỏ, sát với quy trình",
+          "description": "Chiến lược, thiết kế sản phẩm, kỹ thuật mô hình và kế hoạch triển khai được thực hiện cùng nhau để hệ thống phù hợp với doanh nghiệp sử dụng."
+        },
+        {
+          "eyebrow": "Tiêu chuẩn",
+          "title": "Không chỉ dừng ở bản demo",
+          "description": "Mỗi dự án đều tính đến đánh giá, ranh giới dữ liệu, chuyển cấp, giám sát và trách nhiệm sau khi ra mắt."
+        }
+      ],
+      "rowsKicker": "Phương pháp",
+      "rowsTitle": "Mô hình hoạt động của công ty",
+      "rows": [
+        {
+          "label": "01",
+          "title": "Bắt đầu từ quy trình kinh doanh",
+          "description": "Chúng tôi xác định luồng quyết định, người dùng, quyền dữ liệu, xử lý ngoại lệ và cách đo giá trị trước khi chọn mô hình hoặc tác tử."
+        },
+        {
+          "label": "02",
+          "title": "Tạo mẫu với ràng buộc vận hành",
+          "description": "Phiên bản đầu tiên đã tính đến kiểm soát truy cập, chất lượng truy xuất, nhật ký, phản hồi và kiểm duyệt của con người."
+        },
+        {
+          "label": "03",
+          "title": "Triển khai với trách nhiệm rõ ràng",
+          "description": "Xác định người quản lý câu lệnh, bộ dữ liệu, phê duyệt, giám sát và chu kỳ cải tiến khi hệ thống đi vào hoạt động."
+        }
+      ],
+      "proofKicker": "Minh chứng",
+      "proofTitle": "Dấu ấn năng lực",
+      "proof": [
+        {
+          "sector": "Công việc tri thức",
+          "title": "Bộ nhớ doanh nghiệp dưới dạng hệ thống AI",
+          "description": "Kết nối chính sách, quy trình chuẩn, phiếu yêu cầu, tài liệu và dữ liệu vận hành thành lớp tri thức riêng tư.",
+          "outcome": "Tìm kiếm nội bộ nhanh hơn với câu trả lời có thể truy nguồn."
+        },
+        {
+          "sector": "Vận hành",
+          "title": "Chuẩn bị công việc với AI",
+          "description": "Tác tử chuẩn bị nhiệm vụ, soạn tóm tắt, chuyển ngoại lệ và giữ quyền quyết định cuối cùng cho con người.",
+          "outcome": "Giảm thao tác thủ công mà vẫn duy trì giám sát."
+        }
+      ],
+      "ctaKicker": "Bước tiếp theo",
+      "ctaTitle": "Cần bản đồ năng lực chi tiết?",
+      "ctaBody": "Khám phá các hệ thống AI chúng tôi thiết kế, từ công cụ tri thức đến vận hành tác tử và quy trình đánh giá.",
+      "ctaHref": "/capabilities",
+      "ctaLabel": "Xem năng lực"
+    },
+    "capabilities": {
+      "slug": "capabilities",
+      "kicker": "Năng lực",
+      "title": "Hệ thống AI cho tri thức, tự động hóa, đánh giá và công việc đa phương thức.",
+      "description": "Các lớp năng lực dành cho đội ngũ cần tích hợp AI với công cụ, dữ liệu, chính sách và hoạt động kiểm duyệt.",
+      "stats": [
+        {
+          "value": "RAG",
+          "label": "Truy xuất tri thức riêng tư và câu trả lời có trích dẫn"
+        },
+        {
+          "value": "Tác tử",
+          "label": "Quy trình gọi công cụ với điểm phê duyệt của con người"
+        },
+        {
+          "value": "Đánh giá",
+          "label": "Bộ kiểm thử và bảng điểm cho hành vi vận hành"
+        }
+      ],
+      "cardsTitle": "Dịch vụ cốt lõi",
+      "cards": [
+        {
+          "eyebrow": "Tri thức",
+          "title": "Hệ thống RAG doanh nghiệp",
+          "description": "Tiếp nhận tài liệu, chiến lược chia đoạn, biểu diễn nhúng, chất lượng tìm kiếm, trích nguồn, phân quyền và vòng phản hồi."
+        },
+        {
+          "eyebrow": "Tự động hóa",
+          "title": "Hệ thống quy trình tác tử",
+          "description": "Tác tử suy luận nhiệm vụ, gọi công cụ được phép, chuẩn bị công việc và xin phê duyệt khi rủi ro tăng."
+        },
+        {
+          "eyebrow": "Lớp mô hình",
+          "title": "Tùy chỉnh và hệ thống câu lệnh",
+          "description": "Kiến trúc câu lệnh, thích ứng lĩnh vực, chiến lược tinh chỉnh, định tuyến mô hình và bộ dữ liệu đánh giá tái sử dụng."
+        },
+        {
+          "eyebrow": "Đa phương thức",
+          "title": "Trí tuệ tài liệu, hình ảnh và âm thanh",
+          "description": "Hệ thống phân loại, trích xuất, tóm tắt và chuyển thông tin từ nội dung vận hành phức tạp."
+        }
+      ],
+      "rowsKicker": "Phương pháp",
+      "rowsTitle": "Quy trình bàn giao",
+      "rows": [
+        {
+          "label": "Phạm vi",
+          "title": "Xác định quy trình hẹp có giá trị cao",
+          "description": "Xác định quy trình nơi AI giúp giảm thời gian, tăng tính nhất quán hoặc khai thác tri thức phân tán."
+        },
+        {
+          "label": "Xây dựng",
+          "title": "Tạo mẫu theo thực tế vận hành",
+          "description": "Bản mẫu gồm giao diện, lõi truy xuất hoặc tác tử, đánh giá, phân quyền và hành vi bàn giao."
+        },
+        {
+          "label": "Hoàn thiện",
+          "title": "Từ bản mẫu đến hệ thống được quản trị",
+          "description": "Bổ sung giám sát, dấu vết kiểm toán, phản hồi người dùng, phương án dự phòng và mô hình vận hành để cải tiến liên tục."
+        }
+      ],
+      "proofKicker": "Minh chứng",
+      "proofTitle": "Công việc tiêu biểu",
+      "proof": [
+        {
+          "sector": "Tuân thủ",
+          "title": "Công cụ tri thức chính sách",
+          "description": "Trợ lý an toàn cho chính sách, kiểm soát và câu hỏi rà soát với câu trả lời có nguồn.",
+          "outcome": "Giảm thời gian tìm kiếm, làm rõ bằng chứng rà soát."
+        },
+        {
+          "sector": "Vận hành khách hàng",
+          "title": "Tác tử quy trình hỗ trợ",
+          "description": "Tác tử tóm tắt hồ sơ, đề xuất hành động và chuyển trường hợp nhạy cảm cho nhân viên.",
+          "outcome": "Xử lý nhất quán hơn trong quy trình lặp lại."
+        }
+      ],
+      "ctaKicker": "Bước tiếp theo",
+      "ctaTitle": "Muốn xem kiến trúc hệ thống?",
+      "ctaBody": "Trang công nghệ giải thích triển khai riêng tư, truy xuất, môi trường tác tử, khả năng quan sát và đánh giá.",
+      "ctaHref": "/technology",
+      "ctaLabel": "Xem công nghệ"
+    },
+    "technology": {
+      "slug": "technology",
+      "kicker": "Công nghệ",
+      "title": "Kiến trúc AI riêng tư cho quy trình doanh nghiệp được quản trị.",
+      "description": "Kết hợp truy xuất, điều phối tác tử, định tuyến mô hình, đánh giá, khả năng quan sát và kiểm soát triển khai.",
+      "stats": [
+        {
+          "value": "VPC",
+          "label": "Đám mây riêng và mô hình triển khai có kiểm soát"
+        },
+        {
+          "value": "Kiểm toán",
+          "label": "Nhật ký và luồng rà soát cho quy trình quan trọng"
+        },
+        {
+          "value": "Bảng điểm",
+          "label": "Đo hành vi trước và sau khi ra mắt"
+        }
+      ],
+      "cardsTitle": "Các lớp hệ thống",
+      "cards": [
+        {
+          "eyebrow": "Dữ liệu",
+          "title": "Lớp truy xuất và phân quyền",
+          "description": "Kết nối tài liệu, cơ sở dữ liệu, phiếu yêu cầu và kho tri thức, đồng thời giữ quy tắc truy cập và khả năng truy nguồn."
+        },
+        {
+          "eyebrow": "Môi trường chạy",
+          "title": "Điều phối tác tử",
+          "description": "Lập kế hoạch, gọi công cụ, xác minh đầu ra, xin phê duyệt và bàn giao khi quy trình cần con người."
+        },
+        {
+          "eyebrow": "Mô hình",
+          "title": "Định tuyến và thích ứng mô hình",
+          "description": "Chọn mô hình theo chi phí, độ trễ, độ chính xác, quyền riêng tư và hành vi chuyên ngành."
+        },
+        {
+          "eyebrow": "Kiểm soát",
+          "title": "Giám sát và đánh giá",
+          "description": "Theo dõi chất lượng, độ trễ, mẫu sai lệch, sự kiện chuyển cấp, phản hồi và nguy cơ hồi quy."
+        }
+      ],
+      "rowsKicker": "Phương pháp",
+      "rowsTitle": "Bảo mật và quản trị",
+      "rows": [
+        {
+          "label": "Riêng tư",
+          "title": "Triển khai nơi dữ liệu đang lưu trữ",
+          "description": "Thiết kế cho VPC, đám mây riêng hoặc tại chỗ theo nhu cầu bảo mật và tuân thủ."
+        },
+        {
+          "label": "Có kiểm soát",
+          "title": "Con người phê duyệt hành động nhạy cảm",
+          "description": "Quyền tự chủ của tác tử được giới hạn bởi chính sách, độ tin cậy, rủi ro và điểm phê duyệt rõ ràng."
+        },
+        {
+          "label": "Có đo lường",
+          "title": "Đánh giá trước và sau khi ra mắt",
+          "description": "Tạo bộ kiểm thử, phân loại lỗi và kiểm tra hồi quy để quan sát hành vi vận hành."
+        }
+      ],
+      "proofKicker": "Minh chứng",
+      "proofTitle": "Mẫu kiến trúc",
+      "proof": [
+        {
+          "sector": "Tìm kiếm an toàn",
+          "title": "Truy xuất theo quyền truy cập",
+          "description": "Người dùng chỉ truy xuất nội dung được phép, đồng thời luôn thấy ngữ cảnh nguồn của câu trả lời.",
+          "outcome": "Tiếp cận tri thức tốt hơn mà không bỏ qua quản trị."
+        },
+        {
+          "sector": "Kiểm soát tác tử",
+          "title": "Tự động hóa có cổng phê duyệt",
+          "description": "Tác tử chuẩn bị và đề xuất công việc; con người phê duyệt hành động cuối trong quy trình nhạy cảm.",
+          "outcome": "Tốc độ tự động hóa đi cùng kiểm soát vận hành."
+        }
+      ],
+      "ctaKicker": "Bước tiếp theo",
+      "ctaTitle": "Cần minh chứng thực tế?",
+      "ctaBody": "Khám phá dự án tiêu biểu cho đội ngũ tuân thủ, vận hành, nghiên cứu và thương mại.",
+      "ctaHref": "/case-studies",
+      "ctaLabel": "Xem dự án tiêu biểu"
+    },
+    "case-studies": {
+      "slug": "case-studies",
+      "kicker": "Dự án tiêu biểu",
+      "title": "Các dự án hệ thống AI tiêu biểu cho quy trình doanh nghiệp thực tế.",
+      "description": "Những mẫu này thể hiện công việc NativeLab AI hướng đến: tri thức riêng tư, tác tử có kiểm soát, trí tuệ tài liệu và hỗ trợ quyết định vận hành.",
+      "stats": [
+        {
+          "value": "4",
+          "label": "Mẫu dự án tiêu biểu"
+        },
+        {
+          "value": "Con người rà soát",
+          "label": "Điểm phê duyệt nằm trong quy trình"
+        },
+        {
+          "value": "Có thể truy nguồn",
+          "label": "Đầu ra kết nối với ngữ cảnh nguồn và nhật ký"
+        }
+      ],
+      "cardsTitle": "Ví dụ công việc",
+      "cards": [
+        {
+          "eyebrow": "Tuân thủ",
+          "title": "Công cụ tri thức chính sách",
+          "description": "Hệ thống tìm kiếm và trả lời an toàn cho kiểm soát, chính sách, ghi chú rà soát và hướng dẫn nội bộ."
+        },
+        {
+          "eyebrow": "Vận hành",
+          "title": "Tác tử vận hành khách hàng",
+          "description": "Quy trình tác tử chuẩn bị tóm tắt hồ sơ, đề xuất bước tiếp theo và chuyển cấp tình huống nhạy cảm."
+        },
+        {
+          "eyebrow": "Nghiên cứu",
+          "title": "Quy trình trí tuệ tài liệu",
+          "description": "Trích xuất, so sánh, tóm tắt và chuyển thông tin từ bộ tài liệu kỹ thuật dài."
+        },
+        {
+          "eyebrow": "Thương mại",
+          "title": "Trợ lý suy luận tồn kho",
+          "description": "Lớp hỗ trợ quyết định kết hợp tín hiệu sản phẩm, nhu cầu và vận hành cho đội ngũ lập kế hoạch."
+        }
+      ],
+      "rowsKicker": "Phương pháp",
+      "rowsTitle": "Cách đánh giá từng dự án",
+      "rows": [
+        {
+          "label": "Phù hợp",
+          "title": "AI có phù hợp với quy trình này?",
+          "description": "Xác minh công việc có mẫu lặp lại, dữ liệu hữu ích, người dùng rõ ràng và giá trị đo lường được."
+        },
+        {
+          "label": "Rủi ro",
+          "title": "Điều gì có thể sai?",
+          "description": "Ghi nhận rủi ro bịa thông tin, truy xuất sai, tự động hóa quá mức, ranh giới riêng tư và yêu cầu rà soát."
+        },
+        {
+          "label": "Mở rộng",
+          "title": "Vận hành thế nào sau khi ra mắt?",
+          "description": "Xác định giám sát, trách nhiệm, vòng phản hồi và quy trình vận hành trước khi mở rộng."
+        }
+      ],
+      "proofKicker": "Minh chứng",
+      "proofTitle": "Kết quả chọn lọc",
+      "proof": [
+        {
+          "sector": "Tuân thủ",
+          "title": "Tìm bằng chứng nhanh hơn",
+          "description": "Câu trả lời chính sách giữ liên kết với ngữ cảnh nguồn để người rà soát xác minh thay vì làm lại từ đầu.",
+          "outcome": "Giảm tìm kiếm thủ công trong chu kỳ rà soát."
+        },
+        {
+          "sector": "Vận hành",
+          "title": "Chuẩn bị hồ sơ nhất quán hơn",
+          "description": "Tác tử soạn tóm tắt và đề xuất bước tiếp theo theo cùng quy tắc kinh doanh giữa các nhóm.",
+          "outcome": "Giảm biến động trong công việc vận hành lặp lại."
+        },
+        {
+          "sector": "Nghiên cứu",
+          "title": "Rà soát tài liệu có cấu trúc",
+          "description": "Tài liệu dài được trích thành trường nhất quán, so sánh và chuyển chuyên gia rà soát.",
+          "outcome": "Chuyên gia tập trung đánh giá thay vì sắp xếp."
+        }
+      ],
+      "ctaKicker": "Bước tiếp theo",
+      "ctaTitle": "Có quy trình tương tự?",
+      "ctaBody": "Gửi quy trình, nguồn dữ liệu, người dùng và ràng buộc rủi ro. Chúng tôi sẽ phác thảo hướng đi đầu tiên.",
+      "ctaHref": "/contact",
+      "ctaLabel": "Bắt đầu trao đổi"
+    },
+    "contact": {
+      "slug": "contact",
+      "kicker": "Liên hệ",
+      "title": "Bắt đầu từ quy trình, ranh giới dữ liệu và quyết định bạn muốn cải thiện.",
+      "description": "Cuộc trao đổi đầu tiên nên cụ thể: đội ngũ nào phụ trách, dữ liệu nào liên quan, quyết định nào cần hỗ trợ và cần kiểm soát rủi ro gì.",
+      "stats": [
+        {
+          "value": "24–48 giờ",
+          "label": "Thời gian phản hồi thường gặp cho yêu cầu mới"
+        },
+        {
+          "value": "30 phút",
+          "label": "Trao đổi ban đầu về mức độ phù hợp"
+        },
+        {
+          "value": "4–8 tuần",
+          "label": "Khung thời gian tạo mẫu cho quy trình phù hợp"
+        }
+      ],
+      "cardsTitle": "Kênh liên hệ",
+      "cards": [
+        {
+          "eyebrow": "Dự án mới",
+          "title": "Trao đổi về hệ thống AI",
+          "description": "Chia sẻ quy trình, người dùng, nguồn dữ liệu, công cụ hiện có và điều bản mẫu đầu tiên cần chứng minh."
+        },
+        {
+          "eyebrow": "Rà soát kỹ thuật",
+          "title": "Đánh giá sáng kiến AI hiện có",
+          "description": "Mang bản mẫu, hệ thống RAG hoặc quy trình tác tử để đánh giá, rà soát rủi ro và lập kế hoạch vận hành."
+        },
+        {
+          "eyebrow": "Hợp tác",
+          "title": "Cùng xây dựng với NativeLab AI",
+          "description": "Dành cho đội ngũ sản phẩm, tư vấn và vận hành cần đối tác chuyên sâu về hệ thống AI."
+        }
+      ],
+      "rowsKicker": "Phương pháp",
+      "rowsTitle": "Thông tin cần cung cấp",
+      "rows": [
+        {
+          "label": "Bối cảnh",
+          "title": "Quy trình kinh doanh",
+          "description": "Mô tả quy trình, đội ngũ, vai trò, điểm quyết định và nơi công việc đang chậm hoặc thiếu nhất quán."
+        },
+        {
+          "label": "Dữ liệu",
+          "title": "Ranh giới thông tin",
+          "description": "Liệt kê tài liệu, hệ thống, cơ sở dữ liệu, API và giới hạn riêng tư mà hệ thống AI cần tôn trọng."
+        },
+        {
+          "label": "Kết quả",
+          "title": "Kết quả đo lường đầu tiên",
+          "description": "Xác định điều bản mẫu thành công cần chứng minh trước khi lập kế hoạch vận hành."
+        }
+      ],
+      "proofKicker": "Minh chứng",
+      "proofTitle": "Mức độ phù hợp",
+      "proof": [
+        {
+          "sector": "Phù hợp nhất",
+          "title": "Hệ thống AI theo quy trình cụ thể",
+          "description": "Hệ thống tri thức riêng tư, tác tử có kiểm soát, đánh giá mô hình, trí tuệ tài liệu và trợ lý vận hành.",
+          "outcome": "Phù hợp với đội ngũ có dữ liệu thật và người phụ trách rõ ràng."
+        },
+        {
+          "sector": "Ít phù hợp",
+          "title": "Yêu cầu chatbot chung chung",
+          "description": "Dự án chatbot chỉ để demo, không có chủ dữ liệu, bối cảnh quy trình hoặc yêu cầu vận hành.",
+          "outcome": "Chúng tôi sẽ thu hẹp phạm vi trước khi xây dựng."
+        }
+      ],
+      "ctaKicker": "Bước tiếp theo",
+      "ctaTitle": "Gửi bản mô tả quy trình",
+      "ctaBody": "Gửi email về quy trình, nguồn dữ liệu, đội ngũ và kết quả mong muốn. Chúng tôi sẽ phản hồi bước tiếp theo phù hợp.",
+      "ctaHref": "mailto:studio@nativelab.ai",
+      "ctaLabel": "Gửi email cho NativeLab AI"
+    }
+  },
+  "Visual": {
+    "realWorld": "THỰC TẾ",
+    "productionOperations": "Xây dựng cho vận hành thực tế.",
+    "privateLabel": "RIÊNG TƯ",
+    "environmentData": "Dữ liệu ở trong môi trường của bạn.",
+    "scalable": "MỞ RỘNG",
+    "pilotDeployment": "Từ thử nghiệm đến triển khai doanh nghiệp.",
+    "trusted": "ĐÁNG TIN CẬY",
+    "governanceEvaluation": "Quản trị và đánh giá ngay từ thiết kế.",
+    "knowledge": "Tri thức",
+    "automation": "Tự động hóa",
+    "evaluation": "Đánh giá",
+    "multimodal": "Đa phương thức",
+    "models": "Mô hình",
+    "security": "Bảo mật",
+    "orchestration": "Điều phối",
+    "observability": "Quan sát",
+    "taskModels": "Mô hình phù hợp cho từng nhiệm vụ",
+    "privateData": "Dữ liệu của bạn luôn riêng tư",
+    "agentWorkflows": "Tác tử và quy trình",
+    "liveMonitoring": "Giám sát theo thời gian thực",
+    "domainDocuments": "Tài liệu riêng tư và dữ liệu chuyên ngành",
+    "enterpriseIntegration": "Tích hợp công cụ và quy trình doanh nghiệp",
+    "testBehavior": "Bộ kiểm thử và hành vi thực tế",
+    "multiAgentGovernance": "Điều phối nhiều tác tử có quản trị",
+    "agents": "Tác tử",
+    "businessImpact": "TÁC ĐỘNG\nKINH DOANH\nTHỰC TẾ",
+    "securePrivateScalable": "AN TOÀN\nRIÊNG TƯ\nMỞ RỘNG",
+    "observableEvaluatableTrusted": "QUAN SÁT\nĐÁNH GIÁ\nTIN CẬY",
+    "dataBoundary": "RANH GIỚI\nDỮ LIỆU",
+    "workflow": "QUY TRÌNH",
+    "decision": "QUYẾT ĐỊNH",
+    "retrieval": "Truy xuất",
+    "eval": "Đánh giá",
+    "agent": "Tác tử",
+    "pass": "ĐẠT",
+    "warn": "LƯU Ý",
+    "connectData": "Kết nối với",
+    "secureConnection": "dữ liệu an toàn.",
+    "testPerformance": "Kiểm tra hiệu quả",
+    "realPerformance": "trong thực tế.",
+    "takeAction": "Thực hiện hành động",
+    "toolAction": "trong công cụ của bạn."
+  },
+  "Chat": {
+    "status": "Liên hệ đội ngũ",
+    "greeting": "Xin chào 👋 Chúng tôi có thể giúp gì? Chọn kênh liên hệ bên dưới để trao đổi về dự án của bạn.",
+    "email": "Email",
+    "phone": "Điện thoại",
+    "contact": "Liên hệ",
+    "open": "Mở cửa sổ liên hệ",
+    "close": "Đóng cửa sổ liên hệ"
   }
 }

@@ -1,6 +1,6 @@
 import { defineRouting } from "next-intl/routing";
 
-export const locales = ["en", "th", "zh", "vi", "lo"] as const;
+export const locales = ["en", "th", "zh-CN", "vi", "lo"] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -13,4 +13,5 @@ export const routing = defineRouting({
   defaultLocale: "en",
   localePrefix: "as-needed",
   localeDetection: false,
+  localeCookie: { name: "NEXT_LOCALE", maxAge: 60 * 60 * 24 * 365, sameSite: "lax" },
 });

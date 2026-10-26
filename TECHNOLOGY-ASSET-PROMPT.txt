@@ -1,0 +1,3 @@
+Technology environment asset
+Built-in image_gen used; saved at public/technology-cavern-v1.png.
+Prompt: cinematic wide 16:9 black-green futuristic cavern/server hall, wet black rocks along lower corners, reflective wet floor, low concentric green hologram pedestal at 70% width and 72% height; empty nearly-black left 45% for live webpage copy and empty dark upper-right for the live globe. Photoreal 3D materials, #050807, #10251b, #a3ff5f. No globe, text, UI, navbar, labels, logos, or watermark.

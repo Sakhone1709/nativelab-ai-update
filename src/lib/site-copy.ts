@@ -108,6 +108,7 @@ export type HomeCopy = SharedCopy & {
   process: {
     kicker: string;
     title: string;
+    body: string;
     items: ProcessStep[];
   };
 };
@@ -189,6 +190,7 @@ export async function getHomeCopy(locale: Locale): Promise<HomeCopy> {
       items: t.raw("useCases.items") as UseCase[],
     },
     process: {
+      body: t("process.body"),
       kicker: t("process.kicker"),
       title: t("process.title"),
       items: t.raw("process.items") as ProcessStep[],

@@ -1,3 +1,9 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import { useTranslations } from "next-intl";
+import { Menu } from "lucide-react";
+import { usePathname } from "@/i18n/navigation";
 import {
   GitBranch,
   Globe2,
@@ -8,6 +14,7 @@ import {
 } from "lucide-react";
 
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { BrandHeading } from "@/components/brand-heading";
 import { Link } from "@/i18n/navigation";
 import type { FooterCopy, NavCopy, SocialLink } from "@/lib/site-copy";
 
@@ -50,8 +57,8 @@ export function BrandMark({
           y1="16"
           y2="48"
         >
-          <stop offset="0" stopColor="#5ff0cd" />
-          <stop offset="1" stopColor="#21d3a4" />
+          <stop offset="0" stopColor="#76b900" />
+          <stop offset="1" stopColor="#76b900" />
         </linearGradient>
         <filter height="180%" id={glow} width="180%" x="-40%" y="-40%">
           <feGaussianBlur result="b" stdDeviation="1.4" />
@@ -67,7 +74,7 @@ export function BrandMark({
         fill="none"
         height="56.5"
         rx="14.25"
-        stroke="#21d3a4"
+        stroke="#76b900"
         strokeOpacity="0.55"
         strokeWidth="1.5"
         width="56.5"
@@ -95,8 +102,8 @@ export function BrandMark({
       />
 
       {/* AI node: steady core + outward ping */}
-      <circle className="logo-ping" cx="42" cy="17.5" fill="#5ff0cd" r="7.5" />
-      <circle className="logo-core" cx="42" cy="17.5" fill="#7df7d6" r="4.4" />
+      <circle className="logo-ping" cx="42" cy="17.5" fill="#76b900" r="7.5" />
+      <circle className="logo-core" cx="42" cy="17.5" fill="#76b900" r="4.4" />
       <circle cx="42" cy="17.5" fill="#03231a" r="1.6" />
     </svg>
   );
@@ -145,7 +152,7 @@ export function SectionHeader({
     <div className="max-w-3xl">
       <p className="overline text-primary">{kicker}</p>
       <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">
-        {title}
+        <BrandHeading text={title} />
       </h2>
       {body ? (
         <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
@@ -157,7 +164,20 @@ export function SectionHeader({
 }
 
 export function SiteHeader({ nav }: { nav: NavCopy }) {
+  const pathname = usePathname();
+  const t = useTranslations("Navigation");
+  const dialog = useRef<HTMLDialogElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+  const close = () => { dialog.current?.close(); trigger.current?.focus(); };
+  useEffect(() => {
+    const element = dialog.current;
+    if (!element) return;
+    const restore = () => { document.body.style.overflow = ""; };
+    element.addEventListener("close", restore);
+    return () => { restore(); element.removeEventListener("close", restore); };
+  }, []);
   const navLinks = [
+    { href: "/", label: nav.home },
     { href: "/company", label: nav.company },
     { href: "/capabilities", label: nav.capabilities },
     { href: "/technology", label: nav.technology },
@@ -178,12 +198,13 @@ export function SiteHeader({ nav }: { nav: NavCopy }) {
           <Wordmark className="text-[15px]" />
         </Link>
         <nav
-          aria-label="Primary navigation"
+          aria-label={t("primary")}
           className="hidden items-center gap-6 lg:flex"
         >
           {navLinks.map((link) => (
             <Link
               className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ring"
+              aria-current={pathname === link.href ? "page" : undefined}
               href={link.href}
               key={link.href}
             >
@@ -199,8 +220,15 @@ export function SiteHeader({ nav }: { nav: NavCopy }) {
             {nav.contact}
           </Link>
           <LanguageSwitcher />
+          <button ref={trigger} type="button" className="menu-trigger lg:hidden" aria-label={t("openMenu")} aria-haspopup="dialog" onClick={() => { dialog.current?.showModal(); document.body.style.overflow = "hidden"; }}><Menu aria-hidden="true" size={21} /></button>
         </div>
       </div>
+      <dialog ref={dialog} className="mobile-drawer" aria-label={t("primary")} onClick={(event) => { if (event.target === event.currentTarget) close(); }}>
+        <div className="drawer-content">
+          <div className="flex items-center justify-between"><Wordmark /><button type="button" autoFocus className="menu-trigger" aria-label={t("closeMenu")} onClick={close}><X aria-hidden="true" /></button></div>
+          <nav aria-label={t("primary")} className="mt-12 flex flex-col">{[...navLinks, { href: "/contact", label: nav.contact }].map(link => <Link key={link.href} href={link.href} aria-current={pathname === link.href ? "page" : undefined} onClick={close} className="drawer-link">{link.label}</Link>)}</nav>
+        </div>
+      </dialog>
     </header>
   );
 }
@@ -231,7 +259,7 @@ export function SiteFooter({ footer }: { footer: FooterCopy }) {
           <p className="overline text-primary">{footer.contactTitle}</p>
           <div className="mt-5 grid gap-3 md:grid-cols-3">
             <a
-              className="group rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              className="ai-card group rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
               href={`mailto:${footer.email}`}
             >
               <Mail aria-hidden="true" className="h-5 w-5 text-primary" />
@@ -243,7 +271,7 @@ export function SiteFooter({ footer }: { footer: FooterCopy }) {
               </p>
             </a>
             <a
-              className="group rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              className="ai-card group rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
               href={footer.phoneHref}
             >
               <Phone aria-hidden="true" className="h-5 w-5 text-primary" />
@@ -255,7 +283,7 @@ export function SiteFooter({ footer }: { footer: FooterCopy }) {
               </p>
             </a>
             <a
-              className="group rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
+              className="ai-card group rounded-md border border-border bg-card p-4 transition-colors hover:border-primary/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
               href={footer.addressHref}
               rel="noreferrer"
               target="_blank"

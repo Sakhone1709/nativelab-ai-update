@@ -4,7 +4,10 @@
     "description": "NativeLab AI designs and deploys private AI systems, enterprise knowledge engines, agent workflows, and model evaluation pipelines for modern companies."
   },
   "Navigation": {
-    "language": "Change language"
+    "language": "Change language",
+    "primary": "Primary navigation",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "Home": {
     "nav": {
@@ -129,7 +132,8 @@
           "title": "Deploy with governance",
           "description": "We move into production with monitoring, access control, feedback loops, and clear ownership."
         }
-      ]
+      ],
+      "body": "A clear, repeatable process to turn real business signals into reliable AI systems — from analysis to production, with governance built in."
     },
     "footer": {
       "company": "High-tech AI systems company.",
@@ -166,5 +170,471 @@
         }
       ]
     }
+  },
+  "Profiles": {
+    "company": {
+      "slug": "company",
+      "kicker": "Company profile",
+      "title": "A high-tech AI systems company built around production reality.",
+      "description": "NativeLab AI designs private AI systems for companies that need measurable automation, trustworthy knowledge retrieval, and controlled decision support.",
+      "stats": [
+        {
+          "value": "AI-native",
+          "label": "Systems designed around model behavior and operations"
+        },
+        {
+          "value": "Private",
+          "label": "Deployment options for governed enterprise data"
+        },
+        {
+          "value": "Eval-first",
+          "label": "Quality gates before broad rollout"
+        }
+      ],
+      "cardsTitle": "What defines the company",
+      "cards": [
+        {
+          "eyebrow": "Mission",
+          "title": "Make AI operationally useful",
+          "description": "We build around the work people already do: searching knowledge, preparing decisions, reviewing exceptions, and moving tasks through secure workflows."
+        },
+        {
+          "eyebrow": "Studio model",
+          "title": "Small expert team, close to the workflow",
+          "description": "Strategy, product design, model engineering, and deployment planning happen together so the system feels native to the company using it."
+        },
+        {
+          "eyebrow": "Standard",
+          "title": "No demo-only systems",
+          "description": "Every project is shaped around evaluation, data boundaries, escalation paths, monitoring, and ownership after launch."
+        }
+      ],
+      "rowsKicker": "Method",
+      "rowsTitle": "Company operating model",
+      "rows": [
+        {
+          "label": "01",
+          "title": "Business process first",
+          "description": "We map the decision path, users, data permissions, exception handling, and value measurement before choosing a model or agent pattern."
+        },
+        {
+          "label": "02",
+          "title": "Prototype with production constraints",
+          "description": "The first version already accounts for access control, retrieval quality, logs, feedback, and human review."
+        },
+        {
+          "label": "03",
+          "title": "Deploy with clear ownership",
+          "description": "We define who owns prompts, datasets, approvals, monitoring, and improvement cycles once the system goes live."
+        }
+      ],
+      "proofKicker": "Proof",
+      "proofTitle": "Profile signals",
+      "proof": [
+        {
+          "sector": "Knowledge work",
+          "title": "Company memory as an AI system",
+          "description": "Connect policies, SOPs, tickets, documents, and operational data into a private knowledge layer.",
+          "outcome": "Faster internal search with traceable answers."
+        },
+        {
+          "sector": "Operations",
+          "title": "AI-assisted work preparation",
+          "description": "Agents prepare tasks, draft summaries, route exceptions, and keep people in control of final decisions.",
+          "outcome": "Lower manual handling without losing oversight."
+        }
+      ],
+      "ctaKicker": "Next step",
+      "ctaTitle": "Need the detailed capability map?",
+      "ctaBody": "Review the AI systems we design, from knowledge engines to agent operations and evaluation pipelines.",
+      "ctaHref": "/capabilities",
+      "ctaLabel": "View capabilities"
+    },
+    "capabilities": {
+      "slug": "capabilities",
+      "kicker": "Capabilities",
+      "title": "AI systems for knowledge, automation, evaluation, and multimodal work.",
+      "description": "The capability stack is designed for teams that need AI to integrate with tools, data, policies, and operator review.",
+      "stats": [
+        {
+          "value": "RAG",
+          "label": "Private knowledge retrieval and citation-aware answers"
+        },
+        {
+          "value": "Agents",
+          "label": "Tool-calling workflows with human approval points"
+        },
+        {
+          "value": "Evals",
+          "label": "Test sets and scorecards for production behavior"
+        }
+      ],
+      "cardsTitle": "Core services",
+      "cards": [
+        {
+          "eyebrow": "Knowledge",
+          "title": "Enterprise RAG systems",
+          "description": "Document ingestion, chunking strategy, embeddings, search quality, source citations, permissions, and feedback loops."
+        },
+        {
+          "eyebrow": "Automation",
+          "title": "Agentic workflow systems",
+          "description": "Agents reason over tasks, call approved tools, prepare work, and request human approval when risk increases."
+        },
+        {
+          "eyebrow": "Model layer",
+          "title": "Customization and prompt systems",
+          "description": "Prompt architecture, domain adaptation, fine-tuning strategy, model routing, and reusable evaluation datasets."
+        },
+        {
+          "eyebrow": "Multimodal",
+          "title": "Document, image, and audio intelligence",
+          "description": "Systems that classify, extract, summarize, and route information from complex operational content."
+        }
+      ],
+      "rowsKicker": "Method",
+      "rowsTitle": "Delivery pattern",
+      "rows": [
+        {
+          "label": "Scope",
+          "title": "Define the narrow high-value workflow",
+          "description": "We identify a process where AI can reduce time, improve consistency, or reveal knowledge hidden across systems."
+        },
+        {
+          "label": "Build",
+          "title": "Create a production-shaped prototype",
+          "description": "The prototype includes interface, retrieval or agent core, evaluation path, permissions, and handoff behavior."
+        },
+        {
+          "label": "Harden",
+          "title": "Move from prototype to governed system",
+          "description": "We add monitoring, audit trail, user feedback, fallback paths, and the operating model for continued improvement."
+        }
+      ],
+      "proofKicker": "Proof",
+      "proofTitle": "Representative work",
+      "proof": [
+        {
+          "sector": "Compliance",
+          "title": "Policy knowledge engine",
+          "description": "A secure assistant for policies, controls, and review questions with source-backed answers.",
+          "outcome": "Reduced search time and clearer review evidence."
+        },
+        {
+          "sector": "Customer operations",
+          "title": "Support workflow agent",
+          "description": "An agent prepares case summaries, recommends actions, and escalates sensitive cases to staff.",
+          "outcome": "More consistent handling across repetitive workflows."
+        }
+      ],
+      "ctaKicker": "Next step",
+      "ctaTitle": "Want to see the system architecture?",
+      "ctaBody": "The technology page explains private deployment, retrieval, agent runtime, observability, and evaluation.",
+      "ctaHref": "/technology",
+      "ctaLabel": "View technology"
+    },
+    "technology": {
+      "slug": "technology",
+      "kicker": "Technology",
+      "title": "A private AI architecture for governed enterprise workflows.",
+      "description": "The stack combines retrieval, agent orchestration, model routing, evaluation, observability, and deployment controls.",
+      "stats": [
+        {
+          "value": "VPC",
+          "label": "Private cloud and controlled deployment patterns"
+        },
+        {
+          "value": "Audit",
+          "label": "Logs and review paths for business-critical flows"
+        },
+        {
+          "value": "Scorecards",
+          "label": "Behavior measured before and after launch"
+        }
+      ],
+      "cardsTitle": "System layers",
+      "cards": [
+        {
+          "eyebrow": "Data",
+          "title": "Retrieval and permission layer",
+          "description": "Connect documents, databases, tickets, and knowledge stores while preserving access rules and source traceability."
+        },
+        {
+          "eyebrow": "Runtime",
+          "title": "Agent orchestration",
+          "description": "Plan tasks, call tools, validate outputs, request approval, and hand off when the workflow requires a person."
+        },
+        {
+          "eyebrow": "Models",
+          "title": "Model routing and adaptation",
+          "description": "Choose the right model path for cost, latency, accuracy, privacy, and domain-specific behavior."
+        },
+        {
+          "eyebrow": "Control",
+          "title": "Monitoring and evaluation",
+          "description": "Track quality, latency, hallucination patterns, escalation events, feedback, and regression risk."
+        }
+      ],
+      "rowsKicker": "Method",
+      "rowsTitle": "Security and governance",
+      "rows": [
+        {
+          "label": "Private",
+          "title": "Deployment where the data already lives",
+          "description": "Systems can be designed for VPC, private cloud, or on-premise patterns depending on security and compliance needs."
+        },
+        {
+          "label": "Controlled",
+          "title": "Human approvals for sensitive actions",
+          "description": "Agent autonomy is bounded by policy, confidence, workflow risk, and explicit approval points."
+        },
+        {
+          "label": "Measured",
+          "title": "Evaluation before and after launch",
+          "description": "We create test sets, failure taxonomies, and regression checks so production behavior is observable."
+        }
+      ],
+      "proofKicker": "Proof",
+      "proofTitle": "Architecture patterns",
+      "proof": [
+        {
+          "sector": "Secure search",
+          "title": "Permission-aware retrieval",
+          "description": "Users only retrieve content they are allowed to access, while answers keep source context visible.",
+          "outcome": "Better knowledge access without bypassing governance."
+        },
+        {
+          "sector": "Agent control",
+          "title": "Approval-gated automation",
+          "description": "Agents can prepare and recommend work while people approve final actions in sensitive workflows.",
+          "outcome": "Automation speed with operational control."
+        }
+      ],
+      "ctaKicker": "Next step",
+      "ctaTitle": "Need proof patterns?",
+      "ctaBody": "Explore representative case studies for compliance, operations, research, and commerce teams.",
+      "ctaHref": "/case-studies",
+      "ctaLabel": "View case studies"
+    },
+    "case-studies": {
+      "slug": "case-studies",
+      "kicker": "Case studies",
+      "title": "Representative AI system engagements for real company workflows.",
+      "description": "These patterns show the type of work NativeLab AI is built for: private knowledge, controlled agents, document intelligence, and operational decision support.",
+      "stats": [
+        {
+          "value": "4",
+          "label": "Representative engagement patterns"
+        },
+        {
+          "value": "Human review",
+          "label": "Approval points kept inside the workflow"
+        },
+        {
+          "value": "Traceable",
+          "label": "Outputs connected to source context and logs"
+        }
+      ],
+      "cardsTitle": "Work examples",
+      "cards": [
+        {
+          "eyebrow": "Compliance",
+          "title": "Policy knowledge engine",
+          "description": "A secure search and answer system for controls, policy documents, review notes, and internal guidance."
+        },
+        {
+          "eyebrow": "Operations",
+          "title": "Customer operations agent",
+          "description": "An agent workflow that prepares case summaries, suggests next actions, and escalates sensitive situations."
+        },
+        {
+          "eyebrow": "Research",
+          "title": "Document intelligence pipeline",
+          "description": "A pipeline that extracts, compares, summarizes, and routes information from long technical document sets."
+        },
+        {
+          "eyebrow": "Commerce",
+          "title": "Inventory reasoning copilot",
+          "description": "A decision-support layer that combines product, demand, and operations signals for planning teams."
+        }
+      ],
+      "rowsKicker": "Method",
+      "rowsTitle": "How every study is evaluated",
+      "rows": [
+        {
+          "label": "Fit",
+          "title": "Does AI belong in this workflow?",
+          "description": "We validate that the work has repeatable patterns, useful data, clear users, and measurable value."
+        },
+        {
+          "label": "Risk",
+          "title": "What can go wrong?",
+          "description": "We document hallucination risk, bad retrieval, over-automation, privacy boundaries, and review requirements."
+        },
+        {
+          "label": "Scale",
+          "title": "How does it run after launch?",
+          "description": "We define monitoring, ownership, feedback loops, and operating processes before scaling usage."
+        }
+      ],
+      "proofKicker": "Proof",
+      "proofTitle": "Selected outcomes",
+      "proof": [
+        {
+          "sector": "Compliance",
+          "title": "Faster evidence discovery",
+          "description": "Policy answers remain connected to source context, so reviewers can verify instead of starting from scratch.",
+          "outcome": "Less manual searching during review cycles."
+        },
+        {
+          "sector": "Operations",
+          "title": "More consistent case preparation",
+          "description": "Agents prepare summaries and recommended next steps using the same business rules across teams.",
+          "outcome": "Reduced variance in repetitive operational work."
+        },
+        {
+          "sector": "Research",
+          "title": "Structured document review",
+          "description": "Long documents are extracted into consistent fields, compared, and routed for expert review.",
+          "outcome": "Specialists spend more time judging, less time sorting."
+        }
+      ],
+      "ctaKicker": "Next step",
+      "ctaTitle": "Have a workflow that looks similar?",
+      "ctaBody": "Send the process, data sources, users, and risk constraints. We can map the first AI system path.",
+      "ctaHref": "/contact",
+      "ctaLabel": "Start a discussion"
+    },
+    "contact": {
+      "slug": "contact",
+      "kicker": "Contact",
+      "title": "Start with the workflow, data boundary, and decision you want to improve.",
+      "description": "The best first conversation is specific: what team owns the process, what data is involved, what decisions need support, and what risk controls are required.",
+      "stats": [
+        {
+          "value": "24-48h",
+          "label": "Typical response window for new inquiries"
+        },
+        {
+          "value": "30 min",
+          "label": "Initial fit discussion"
+        },
+        {
+          "value": "4-8 wks",
+          "label": "Prototype window for qualified workflows"
+        }
+      ],
+      "cardsTitle": "Contact paths",
+      "cards": [
+        {
+          "eyebrow": "New project",
+          "title": "Discuss an AI system",
+          "description": "Share the workflow, users, data sources, current tools, and what a useful first prototype would prove."
+        },
+        {
+          "eyebrow": "Technical review",
+          "title": "Assess an existing AI initiative",
+          "description": "Bring an existing prototype, RAG system, or agent workflow for evaluation, risk review, and production planning."
+        },
+        {
+          "eyebrow": "Partnership",
+          "title": "Build with NativeLab AI",
+          "description": "For product teams, consultancies, and operators that need a specialist AI systems partner."
+        }
+      ],
+      "rowsKicker": "Method",
+      "rowsTitle": "What to include",
+      "rows": [
+        {
+          "label": "Context",
+          "title": "The business workflow",
+          "description": "Describe the process, team, user roles, decision points, and where the current work is slow or inconsistent."
+        },
+        {
+          "label": "Data",
+          "title": "The information boundary",
+          "description": "List the documents, systems, databases, APIs, and privacy constraints the AI system would need to respect."
+        },
+        {
+          "label": "Outcome",
+          "title": "The first measurable result",
+          "description": "Define what a successful prototype should demonstrate before production planning begins."
+        }
+      ],
+      "proofKicker": "Proof",
+      "proofTitle": "Engagement fit",
+      "proof": [
+        {
+          "sector": "Best fit",
+          "title": "Workflow-specific AI systems",
+          "description": "Private knowledge systems, controlled agents, model evaluation, document intelligence, and operational copilots.",
+          "outcome": "Strong fit for teams with real data and a clear owner."
+        },
+        {
+          "sector": "Poor fit",
+          "title": "Generic chatbot requests",
+          "description": "Broad, demo-only chatbot projects without data ownership, workflow context, or production requirements.",
+          "outcome": "We will narrow the scope before building."
+        }
+      ],
+      "ctaKicker": "Next step",
+      "ctaTitle": "Send the workflow brief",
+      "ctaBody": "Email the process, data sources, team, and intended outcome. We will respond with the best next step.",
+      "ctaHref": "mailto:studio@nativelab.ai",
+      "ctaLabel": "Email NativeLab AI"
+    }
+  },
+  "Visual": {
+    "realWorld": "REAL-WORLD",
+    "productionOperations": "Built for production operations.",
+    "privateLabel": "PRIVATE",
+    "environmentData": "Your data stays inside your environment.",
+    "scalable": "SCALABLE",
+    "pilotDeployment": "From pilot to enterprise deployment.",
+    "trusted": "TRUSTED",
+    "governanceEvaluation": "Governance and evaluation by design.",
+    "knowledge": "Knowledge",
+    "automation": "Automation",
+    "evaluation": "Evaluation",
+    "multimodal": "Multimodal",
+    "models": "Models",
+    "security": "Security",
+    "orchestration": "Orchestration",
+    "observability": "Observability",
+    "taskModels": "Best models for each task",
+    "privateData": "Your data stays private",
+    "agentWorkflows": "Agents and workflows",
+    "liveMonitoring": "Real-time monitoring",
+    "domainDocuments": "Private documents and domain data",
+    "enterpriseIntegration": "Integrated with enterprise tools and workflows",
+    "testBehavior": "Test sets and real-world behavior",
+    "multiAgentGovernance": "Multi-agent orchestration with governance",
+    "agents": "Agents",
+    "businessImpact": "REAL\nBUSINESS\nIMPACT",
+    "securePrivateScalable": "SECURE\nPRIVATE\nSCALABLE",
+    "observableEvaluatableTrusted": "OBSERVABLE\nEVALUATABLE\nTRUSTED",
+    "dataBoundary": "DATA\nBOUNDARY",
+    "workflow": "WORKFLOW",
+    "decision": "DECISION",
+    "retrieval": "Retrieval",
+    "eval": "Eval",
+    "agent": "Agent",
+    "pass": "PASS",
+    "warn": "WARN",
+    "connectData": "Connects to your",
+    "secureConnection": "data, securely.",
+    "testPerformance": "Tests real-world",
+    "realPerformance": "performance.",
+    "takeAction": "Takes action",
+    "toolAction": "inside your tools."
+  },
+  "Chat": {
+    "status": "Contact our team",
+    "greeting": "Hello 👋 How can we help? Choose a contact option below to tell us about your project.",
+    "email": "Email",
+    "phone": "Phone",
+    "contact": "Contact",
+    "open": "Open contact chat",
+    "close": "Close contact chat"
   }
 }

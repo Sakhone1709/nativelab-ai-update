@@ -18,6 +18,16 @@ function rememberLocale(response: NextResponse, locale: string) {
 }
 
 export function proxy(request: NextRequest) {
+  if (/^\/ja(?:\/|$)/.test(request.nextUrl.pathname)) {
+    const url = request.nextUrl.clone();
+    url.pathname = url.pathname.replace(/^\/ja(?=\/|$)/, "/vi");
+    return rememberLocale(NextResponse.redirect(url), "vi");
+  }
+  if (/^\/zh(?:\/|$)/.test(request.nextUrl.pathname)) {
+    const url = request.nextUrl.clone();
+    url.pathname = url.pathname.replace(/^\/zh(?=\/|$)/, "/zh-CN");
+    return rememberLocale(NextResponse.redirect(url), "zh-CN");
+  }
   if (request.headers.get(internalLocaleRewriteHeader) === "1") {
     return NextResponse.next();
   }

@@ -37,7 +37,7 @@ export function NeuralFlow() {
   return (
     <div
       aria-hidden="true"
-      className="absolute inset-0 bg-[radial-gradient(120%_120%_at_30%_20%,rgba(33,211,164,0.12),transparent_60%)]"
+      className="absolute inset-0 bg-[radial-gradient(120%_120%_at_30%_20%,rgba(118,185,0,0.12),transparent_60%)]"
     >
       <div className="technical-grid absolute inset-0 opacity-40" />
 
@@ -56,9 +56,9 @@ export function NeuralFlow() {
             </feMerge>
           </filter>
           <linearGradient id="nfScan" x1="0" y1="0" x2={W} y2="0" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stopColor="#21d3a4" stopOpacity="0" />
-            <stop offset="0.5" stopColor="#7df7d6" stopOpacity="0.85" />
-            <stop offset="1" stopColor="#21d3a4" stopOpacity="0" />
+            <stop offset="0" stopColor="#76b900" stopOpacity="0" />
+            <stop offset="0.5" stopColor="#76b900" stopOpacity="0.85" />
+            <stop offset="1" stopColor="#76b900" stopOpacity="0" />
           </linearGradient>
         </defs>
 
@@ -70,7 +70,7 @@ export function NeuralFlow() {
             y1={e.a.y}
             x2={e.b.x}
             y2={e.b.y}
-            stroke="#21d3a4"
+            stroke="#76b900"
             strokeOpacity="0.1"
             strokeWidth="0.6"
           />
@@ -88,7 +88,7 @@ export function NeuralFlow() {
               x2={e.b.x}
               y2={e.b.y}
               pathLength={46}
-              stroke="#9af7da"
+              stroke="#76b900"
               strokeWidth="1.7"
               strokeLinecap="round"
               filter="url(#nfGlow)"
@@ -115,17 +115,17 @@ export function NeuralFlow() {
               cx={n.x}
               cy={n.y}
               r="7"
-              fill="#21d3a4"
+              fill="#76b900"
               fillOpacity="0.16"
               style={{ animationDelay: `${((i % 6) * 0.45).toFixed(2)}s` }}
             />
-            <circle cx={n.x} cy={n.y} r="3" fill="#5ff0cd" />
+            <circle cx={n.x} cy={n.y} r="3" fill="#76b900" />
             <circle cx={n.x} cy={n.y} r="1.1" fill="#03231a" />
           </g>
         ))}
 
         {/* HUD corner brackets */}
-        <g stroke="#21d3a4" strokeOpacity="0.4" strokeWidth="1.2" fill="none">
+        <g stroke="#76b900" strokeOpacity="0.4" strokeWidth="1.2" fill="none">
           <path d="M14 30 L14 14 L30 14" />
           <path d={`M${W - 30} 14 L${W - 14} 14 L${W - 14} 30`} />
           <path d={`M14 ${H - 30} L14 ${H - 14} L30 ${H - 14}`} />

@@ -3,7 +3,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import {
   JetBrains_Mono,
-  Noto_Sans,
+  Inter,
   Noto_Sans_Lao,
   Noto_Sans_SC,
   Noto_Sans_Thai,
@@ -12,13 +12,15 @@ import {
 import { notFound } from "next/navigation";
 
 import "@/app/globals.css";
+import { Experience } from "@/components/experience";
 import { isLocale, Locale, routing } from "@/i18n/routing";
 
-const notoSans = Noto_Sans({
-  subsets: ["latin", "latin-ext", "vietnamese"],
-  variable: "--font-locale",
+const inter = Inter({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-inter",
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: false,
 });
 
 const notoSansThai = Noto_Sans_Thai({
@@ -26,6 +28,7 @@ const notoSansThai = Noto_Sans_Thai({
   variable: "--font-locale",
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: false,
 });
 
 const notoSansLao = Noto_Sans_Lao({
@@ -33,20 +36,23 @@ const notoSansLao = Noto_Sans_Lao({
   variable: "--font-locale",
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: false,
 });
 
 const notoSansSC = Noto_Sans_SC({
   variable: "--font-locale",
   weight: ["400", "500", "600", "700"],
   display: "swap",
-  preload: false,
-});
+  preload: false,});
+
+const vietnamese = Inter({ subsets: ["latin", "vietnamese"], variable: "--font-locale", weight: ["400", "500", "600", "700"], display: "swap", preload: false });
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin", "latin-ext"],
   variable: "--font-space-grotesk",
   weight: ["500", "600", "700"],
   display: "swap",
+  preload: false,
 });
 
 const jetBrainsMono = JetBrains_Mono({
@@ -54,13 +60,14 @@ const jetBrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   weight: ["400", "500", "600", "700"],
   display: "swap",
+  preload: false,
 });
 
 const fontClassByLocale: Record<Locale, string> = {
-  en: notoSans.variable,
+  en: inter.variable,
   th: notoSansThai.variable,
-  zh: notoSansSC.variable,
-  vi: notoSans.variable,
+  "zh-CN": notoSansSC.variable,
+  vi: vietnamese.variable,
   lo: notoSansLao.variable,
 };
 
@@ -102,13 +109,15 @@ export default async function LocaleLayout({
 
   return (
     <html
-      className={`${fontClassByLocale[locale]} ${spaceGrotesk.variable} ${jetBrainsMono.variable}`}
+      className={locale === "en" ? `${inter.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable}` : fontClassByLocale[locale]}
       data-locale={locale}
+      data-scroll-behavior="smooth"
       lang={locale}
     >
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider><Experience>{children}</Experience></NextIntlClientProvider>
       </body>
     </html>
   );
 }
+
